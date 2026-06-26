@@ -1,0 +1,2242 @@
+/* ==========================================================================
+   App-wide base and animations
+   ========================================================================== */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: white;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.appear {
+  animation: appear 1.2s ease-in-out;
+}
+
+.dur15s {
+  animation-duration: 1.5s;
+}
+
+.dur13s {
+  animation-duration: 1.3s;
+}
+
+.dur17s {
+  animation-duration: 1.7s;
+}
+
+.dur19s {
+  animation-duration: 1.9s;
+}
+
+.dur2s {
+  animation-duration: 2s;
+}
+
+.dur22s {
+  animation-duration: 2.2s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   Shared layout, typography, header, and global navigation
+   ========================================================================== */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100vw; */
+  height: 8vh;
+  margin-top: 9px;
+  color: white;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  font-family: "Work Sans", sans-serif;
+}
+
+.Navbuttons {
+  display: flex;
+  gap: 1vw;
+}
+
+.header button {
+  background-color: white;
+  border: none;
+  color: rgb(17, 58, 92);
+  font-size: 1.3rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.header button:hover {
+  background-color: rgb(17, 58, 92);
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.headerLinks a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(17, 58, 92);
+  font-weight: 600;
+  flex-grow: 1;
+  margin-right: 1vw;
+}
+
+.headerLinks a:hover {
+  background-color: rgb(17, 58, 92);
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.header span {
+  color: rgb(17, 58, 92);
+  font-size: 1.3rem;
+}
+
+h1 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.Logo img {
+  width: 13vw;
+  margin: 0;
+  padding: 0;
+  padding-left: 1vw;
+}
+
+.auth-links {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(34, 131, 184);
+  border-radius: 25px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  font-family: "Sen", sans-serif;
+  font-weight: 100;
+}
+
+.links {
+  align-self: flex-start;
+  margin-top: 4vh;
+}
+
+.links img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.navGetStarted {
+  background-color: white;
+  border: none;
+  color: rgb(17, 58, 92);
+  font-size: 1.3rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
+.navGetStarted:hover {
+  background-color: rgb(17, 58, 92);
+  transition: background-color 0.3s;
+  color: white;
+}
+
+/* Shared top header base for survey + results */
+.FormNav,
+.ResultsNav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 8vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(17, 58, 92);
+}
+
+.FormNav img,
+.ResultsNav img {
+  width: 13vw;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  padding-left: 1vw;
+}
+
+.save-exit-link {
+  background: none;
+  border: none;
+  color: rgb(17, 58, 92);
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.save-exit-link:hover {
+  background-color: rgb(17, 58, 92);
+  transition: background-color 0.3s;
+  color: white;
+}
+
+/* ==========================================================================
+   Landing page sections
+   ========================================================================== */
+
+.Section1 {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  width: 80vw;
+  text-align: center;
+}
+
+.subheading {
+  font-size: clamp(26px, 2.5vw, 40px);
+  max-width: 30vw;
+  color: rgb(208, 224, 228);
+  text-align: justify;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.subfont {
+  color: rgb(219, 230, 233);
+  max-width: 35vw;
+  font-size: clamp(20px, 1.7vw, 30px);
+  text-align: justify;
+  font-family: "Sen", sans-serif;
+  font-weight: 100;
+  padding-bottom: 2rem;
+}
+
+.Section2 {
+  background-color: rgb(230, 241, 245);
+}
+
+.Section2body {
+  display: flex;
+  color: rgb(34, 131, 184);
+}
+
+.Section2body div {
+  width: 33vw;
+  text-align: center;
+  padding-bottom: 100px;
+  flex-direction: column;
+}
+
+.Section2header {
+  margin-top: 30px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.Section2header h2 {
+  color: rgb(34, 131, 184);
+  font-size: 16px;
+  padding-top: 75px;
+}
+
+.Section2header h1 {
+  color: rgb(34, 131, 184);
+  margin-bottom: 120px;
+}
+
+.Section2 img {
+  height: 150px;
+  width: 170px;
+}
+
+.Section2body h6 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.Section3 {
+  display: flex;
+  color: white;
+  background-color: rgb(10, 19, 24);
+  width: 100%;
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
+}
+
+.Midpart {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  font-size: 2.5rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.Section3 h2,
+.Section3 p {
+  margin: 0;
+}
+
+.dot h2 {
+  font-size: 2rem;
+  position: relative;
+  top: 15%;
+}
+
+.Midpart p {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 7.7rem;
+}
+
+.item {
+  text-align: center;
+}
+
+.Section3heading {
+  padding-bottom: 6vh;
+}
+
+.Section4 {
+  color: rgb(34, 131, 184);
+  background-color: rgb(230, 241, 245);
+  width: 50vw;
+  align-self: flex-start;
+}
+
+.Section4 h2,
+.Section4 h4 {
+  text-align: start;
+  padding-left: 6rem;
+  color: rgb(23, 107, 152);
+}
+
+.Section4 h4 {
+  font-family: "Sen", sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.Section4 h2,
+.P2Section2 h1 {
+  color: rgb(23, 107, 152);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  max-width: 40vw;
+}
+
+.Section4 p {
+  color: rgb(34, 131, 184);
+  margin-left: 6rem;
+  margin-right: 6rem;
+  font-family: "Sen", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.7em;
+  padding-bottom: 10vh;
+  text-align: justify;
+}
+
+.Section5 {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(34, 131, 184);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.Testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.Testimonial blockquote {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  max-width: 50vw;
+  text-align: center;
+  font-family: "Sen", sans-serif;
+  margin: 0;
+}
+
+.nubs {
+  padding-bottom: 4vh;
+}
+
+.nub {
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 5px;
+  color: rgb(93, 164, 202);
+}
+
+.nub.active {
+  color: white;
+}
+
+.Section5header {
+  color: white;
+  font-family: "Sen", sans-serif;
+  font-weight: 100;
+  font-size: 0.7em;
+  padding-top: 6vh;
+  padding-bottom: 3vh;
+}
+
+.Section6 {
+  color: rgb(34, 131, 184);
+  font-family: "Sen", sans-serif;
+  background-color: rgb(230, 241, 245);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+
+.Section6info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 700px;
+  padding: 30px;
+  margin-left: 8vw;
+  line-height: 2rem;
+}
+
+.Section6info h2,
+.Section6info h4 {
+  text-align: start;
+  align-self: flex-start;
+  padding-bottom: 2vh;
+  color: rgb(23, 107, 152);
+  margin: 0;
+}
+
+.Section6info p {
+  max-width: 700px;
+  text-align: left;
+}
+
+/* ==========================================================================
+   Auth pages
+   ========================================================================== */
+
+.Register,
+.Login {
+  font-family: "Work Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Register .Logo,
+.Login .Logo {
+  padding: 15px 0;
+}
+
+.Register h2,
+.Login h2 {
+  text-align: center;
+  color: rgb(17, 58, 92);
+}
+
+.Login h2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.inputDiv {
+  padding: 10px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.FormContainer,
+.LoginContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: min(40vw, 520px);
+  max-width: 90vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.Register .links,
+.Login .links {
+  margin-top: 70px;
+  flex-direction: row;
+  align-self: center;
+}
+
+.RegisterForm,
+.LoginForm {
+  width: min(30vw, 420px);
+  max-width: 100%;
+}
+
+.RegisterForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.LoginForm {
+  margin-top: 1.5rem;
+}
+
+.RegisterForm input,
+.LoginContainer input,
+.LoginForm input {
+  width: 100%;
+  padding: 10px 42px 10px 10px;
+  border: 2px solid rgb(34, 131, 184);
+  border-radius: 5px;
+  background-color: #e6f1f5;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.RegisterForm input:focus,
+.LoginContainer input:focus,
+.LoginForm input:focus {
+  outline: none;
+  border-color: rgb(17, 58, 92);
+  background-color: #e6f1f5;
+}
+
+.RegisterForm input:hover,
+.LoginContainer input:hover,
+.LoginForm input:hover {
+  background-color: #f3f8fa;
+}
+
+.LoginForm div,
+.RegisterForm .inputDiv,
+.LoginContainer .inputDiv {
+  position: relative;
+}
+
+.LoginForm div,
+.LoginContainer .inputDiv {
+  width: 100%;
+  margin: 0 0 1.25rem 0;
+  box-sizing: border-box;
+}
+
+.showbutton,
+.showbutton2,
+.showbutton3 {
+  position: absolute;
+  right: 12px;
+  top: 65%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.showbutton img,
+.showbutton2 img,
+.showbutton3 img {
+  width: 18px;
+  height: 18px;
+}
+
+.registerbutton {
+  background-color: rgb(17, 58, 92);
+  color: #fff;
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registerbutton:hover {
+  background-color: rgb(34, 131, 184);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+.registerbutton.loading {
+  opacity: 0.6;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.Login .registerbutton {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Style for the "Already have an account?" link */
+.login-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-link p {
+  color: #333;
+}
+
+.login-link a {
+  color: rgb(17, 58, 92);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: rgb(10, 40, 70);
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   About / Page2
+   ========================================================================== */
+
+.Page2 {
+  background-color: #e6f1f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.P2Section2 {
+  display: flex;
+}
+
+.P2Section2 img {
+  height: 85vh;
+  width: 60vw;
+}
+
+.P2Section2 div {
+  width: 40vw;
+  padding-top: 2.5rem;
+}
+
+.P2Section2 p {
+  color: rgb(34, 131, 184);
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-family: "Sen", sans-serif;
+  font-weight: 200;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  text-align: justify;
+  margin-top: 3rem;
+}
+
+.P2Section3 {
+  background-color: #fda828;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0rem;
+}
+
+.P2Section3 em {
+  text-decoration: underline;
+}
+
+.P2Section3 h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.P2Section3 p {
+  font-size: 1.3rem;
+}
+
+.P2Section4 {
+  display: flex;
+}
+
+.P2Section4 img {
+  width: 60vw;
+  height: 90vh;
+}
+
+.P2Section4 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.P2Section4 div img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.P2Section4div {
+  width: 40vw;
+  padding-top: 2.5rem;
+}
+
+.P2Section4 h1 {
+  color: rgb(23, 107, 152);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  max-width: 40vw;
+  margin-top: 2rem;
+  max-height: 10vh;
+}
+
+.P2Section4 ul,
+.P2Section4 p {
+  color: rgb(34, 131, 184);
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.P2Section4 p {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 12vw;
+  margin-top: 5vh;
+}
+
+.P2Section4 button {
+  background-color: #2283b8;
+  font-family: "Work Sans", sans-serif;
+  color: #d0e0e4;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  white-space: nowrap;
+  border: none;
+}
+
+.P2Section4 button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.buttons button span {
+  display: inline-block;
+  transition: transform 0.1s ease;
+}
+
+.buttons button:hover span {
+  transform: scaleX(1.3);
+}
+
+.P2Section4 .links {
+  margin-top: 50px;
+}
+
+/* ==========================================================================
+   Form flow, questionnaire, and side navigation
+   ========================================================================== */
+
+.FormPage {
+  background-color: #d0e0e4;
+  display: flex;
+  flex-direction: column;
+}
+
+.FormPageContainer {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.FormNav {
+  justify-content: space-between;
+  z-index: 10000;
+  font-size: 2em;
+}
+
+.FormNav .save-exit-link {
+  margin-right: 0.75rem;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  width: min(1100px, calc(100vw - clamp(280px, 22vw, 360px) - 3rem));
+  min-height: 100vh;
+  padding: 1.5rem 2rem;
+  margin-left: clamp(280px, 22vw, 360px);
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.Form form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Form img {
+  height: 17vh;
+  width: 17vh;
+  padding-left: 2vw;
+}
+
+.q_header {
+  text-align: start;
+  font-size: 2.5rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.q_index {
+  position: relative;
+  right: 45%;
+  bottom: 4%;
+  font-size: 1rem;
+  color: #4b4141;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 0;
+  font-family: "Sen", sans-serif;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.questions label {
+  color: #2283b8;
+  font-size: 1.5rem;
+  padding-bottom: 2vh;
+}
+
+.question {
+  width: 100%;
+  max-width: 820px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: inherit;
+  box-sizing: border-box;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in;
+}
+
+.question:hover {
+  opacity: 1;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.1vw;
+  background-color: #000;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2.5vw;
+  height: 2vw;
+  border-radius: 60%;
+  background: rgb(34, 131, 184);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: pink;
+  cursor: pointer;
+}
+
+.range-label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.answers {
+  padding: 1vw 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.answers span {
+  width: 4vw;
+}
+
+/* Survey sidenav only */
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 8vh;
+  left: 0;
+  z-index: 1000;
+  height: calc(100vh - 8vh);
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: clamp(280px, 22vw, 360px);
+  flex-shrink: 0;
+  background-color: white;
+  justify-items: flex-start;
+  scrollbar-gutter: stable;
+}
+
+/* Shared sidenav content styles */
+.SideNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  font-size: clamp(1.25rem, 1.4vw, 1.8rem);
+}
+
+.section-title.active {
+  background-color: #2283b8;
+  color: white;
+}
+
+.section-icon {
+  width: 35px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.navlist {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0 0;
+}
+
+.subsection-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.subsection-item {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  color: #22568b;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  min-width: 0;
+}
+
+.subsection-item:hover {
+  color: #000;
+  background-color: #e6f1f5;
+  font-weight: bold;
+}
+
+.subsection-item.active {
+  background-color: #2283b8;
+  color: white;
+  font-weight: bold;
+}
+
+.subsection-item.locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+  color: #999;
+}
+
+.subsection-item.locked:hover {
+  background-color: transparent;
+  font-weight: normal;
+  color: #999;
+  border-left: none;
+}
+
+.subsection-item.completed {
+  color: rgb(34, 131, 184);
+  border-left: 3px solid rgb(34, 131, 184);
+}
+
+.subsection-item.completed:hover {
+  background-color: #e6f1f5;
+  border-left: 3px solid rgb(17, 58, 92);
+}
+
+.lock-icon {
+  font-size: 0.8rem;
+  margin-right: 2px;
+  opacity: 0.7;
+}
+
+.done-icon {
+  font-size: 0.85rem;
+  margin-right: 2px;
+  color: rgb(34, 131, 184);
+}
+
+.formButtons {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-self: center;
+  padding: 1rem 2rem 0;
+  box-sizing: border-box;
+}
+
+.formButtons button {
+  border: none;
+  font-size: 1.5em;
+  font-family: "Work Sans", sans-serif;
+  background-color: rgb(34, 131, 184);
+  border-radius: 25px;
+  width: auto;
+  min-width: 160px;
+  height: 7.5vh;
+  text-align: center;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 0 1.5rem;
+}
+
+.formButtons button:hover {
+  background-color: rgb(17, 58, 92);
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.popup,
+.popupError {
+  position: fixed;
+  bottom: 5vh;
+  left: 50vw;
+  background-color: white;
+  border: solid 3px green;
+  padding: 1vw 2vw;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.popupError {
+  border: solid 3px red;
+}
+
+.popup.fade-out,
+.popupError.fade-out {
+  opacity: 0;
+}
+
+.blurb {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background-color: white;
+  padding: 0 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.blurb p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.blurb p:last-child {
+  margin-bottom: 0;
+}
+
+.blurb p:first-child {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.continue-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: #2283b8;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.continue-btn:hover {
+  background-color: #1a648b;
+}
+
+.continue-btn:focus {
+  outline: none;
+}
+
+/* ==========================================================================
+   Loading and transition states
+   ========================================================================== */
+
+.matchingAnimation {
+  background-color: white;
+  text-align: center;
+  margin-top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  margin: 20px auto;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top-color: #007bff;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+/* ==========================================================================
+   Results pages and results side navigation
+   ========================================================================== */
+
+/* Results page */
+
+.ResultsPage {
+  background-color: #d0e0e4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ResultsMain {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.ResultsMain,
+.ResultsLayout {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.ResultsLayout {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.ResultsNav {
+  z-index: 10;
+  border-bottom: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding: 0 1rem;
+}
+
+.ResultsNav img {
+  justify-self: start;
+}
+
+.ResultsWelcome {
+  justify-self: center;
+  white-space: nowrap;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1;
+  color: rgb(17, 58, 92);
+}
+
+.results-nav-right {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.InfoCard {
+  background-color: white;
+  padding: 4rem 3rem;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ResultsCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: min(1100px, calc(100vw - clamp(220px, 17vw, 280px) - 4rem));
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: 2rem auto 2rem;
+  align-self: flex-start;
+  box-sizing: border-box;
+}
+
+.ResultsCard h2,
+.InfoCard h2 {
+  color: rgb(34, 131, 184);
+  margin-bottom: 1.5rem;
+}
+
+.ResultsCard p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.ResultsButton {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: rgb(34, 131, 184);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.ResultsButton:hover {
+  background-color: rgb(17, 58, 92);
+}
+
+.ResultsTable {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 1100px;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.ResultsTable thead {
+  background-color: rgb(34, 131, 184);
+  color: black;
+}
+
+.ResultsTable tr.rank-row {
+  transition: background-color 0.3s ease;
+}
+
+.rank-1 {
+  background-color: #fef3d9 !important;
+  font-style: normal;
+}
+
+.ResultsTable tbody tr.rank-1:hover {
+  background-color: #fde4a0 !important;
+  font-weight: bold;
+}
+
+.rank-null {
+  background-color: #f2f2f2 !important;
+}
+
+.ResultsTable td.left-align,
+.ResultsTable th.left-align {
+  text-align: left;
+}
+
+.ResultsTable td.center-align,
+.ResultsTable th.center-align {
+  text-align: center;
+  width: auto;
+  padding-right: 0;
+}
+
+.ResultsTable th,
+.ResultsTable td {
+  padding: 12px;
+  margin: 20px;
+  text-align: center;
+  min-width: 0;
+}
+
+.ResultsTable tr:nth-child(even) {
+  background-color: #f0f8fb;
+}
+
+.ResultsTable tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.ResultsTable tbody tr:hover {
+  background-color: #cfe7f1;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ResultsTable tr {
+  transition: font-weight 0.03s ease-in, background-color 0.2s ease-in-out;
+}
+
+/* Main sidenav container */
+.Rsidenav {
+  display: flex;
+  flex-direction: column;
+  width: clamp(220px, 17vw, 280px);
+  flex-shrink: 0;
+  background-color: white;
+  border-right: 1px solid #ccc;
+  align-self: flex-start;
+  position: sticky;
+  top: 8vh;
+  min-height: calc(100vh - 8vh);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Career details, resources, and values tables
+   ========================================================================== */
+
+.CareerDetails {
+  width: 100%;
+  padding: 2rem;
+  background-color: #d0e0e4;
+  display: flex;
+  justify-content: center;
+}
+
+.CareerDetailsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1100px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.CareerDetails h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  color: rgb(34, 131, 184);
+  font-family: "Work Sans", sans-serif;
+}
+
+.CareerDetails h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(17, 58, 92);
+  margin-bottom: 0.75rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.CareerDetailsBlurb p {
+  text-align: left;
+}
+
+.CareerDetailsBlurb p:first-child {
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: normal;
+}
+
+.InlineTextButton {
+  background: none;
+  border: none;
+  color: rgb(34, 131, 184);
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.InlineTextButton:hover {
+  color: rgb(17, 58, 92);
+}
+
+.ScoreSection {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(34, 131, 184);
+  text-align: center;
+  margin: 2rem 0 0.75rem 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.ScoreExplanation {
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  font-family: Sen, sans-serif;
+  padding: 0 1.1rem;
+}
+
+.CareerDetailsTableWrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.LowVarianceTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  background-color: white;
+  border: 1px solid #d6e4ea;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.LowVarianceTable th,
+.LowVarianceTable td {
+  padding: 1rem 1.1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e6eef2;
+  font-family: "Sen", sans-serif;
+  line-height: 1.5;
+}
+
+.LowVarianceTable th {
+  background-color: rgb(230, 241, 245);
+  color: rgb(17, 58, 92);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.LowVarianceTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.LowVarianceTable tbody tr:nth-child(even) {
+  background-color: #f8fbfc;
+}
+
+.LowVarianceTable td:first-child,
+.LowVarianceTable th:first-child {
+  width: 36%;
+}
+
+.LowVarianceTable td:nth-child(2),
+.LowVarianceTable td:nth-child(3) {
+  width: 24%;
+}
+
+.LowVarianceTable td:last-child,
+.LowVarianceTable th:last-child {
+  width: 140px;
+  min-width: 140px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.LowVarianceTable td:last-child .alignment-badge {
+  margin: 0 auto;
+}
+
+.LowVarianceTable.no-hover tbody tr:hover {
+  background-color: inherit;
+  cursor: default;
+  font-weight: normal;
+}
+
+.LowVarianceTable.no-hover tbody tr:nth-child(even):hover {
+  background-color: #fafafa;
+}
+
+.LowVarianceTable.no-hover tbody tr:nth-child(odd):hover {
+  background-color: #ffffff;
+}
+
+.green-cell {
+  background-color: #e8f5ec;
+  color: rgb(17, 58, 92);
+  font-weight: 600;
+}
+
+.red-cell {
+  background-color: #fceaea;
+  color: #8b2e2e;
+  font-weight: 600;
+}
+
+.yellow-cell {
+  background-color: #fff8e8;
+  color: #8a6510;
+  font-weight: 600;
+}
+
+.alignment-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.alignment-badge.aligned {
+  background-color: #e8f5ec;
+  color: #1f6b45;
+}
+
+.alignment-badge.not-aligned {
+  background-color: #fceaea;
+  color: #8b2e2e;
+}
+
+.alignment-badge.unanswered {
+  background-color: #eef3f5;
+  color: #5f6b73;
+}
+
+.BackButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  align-self: center;
+  margin: 1.5rem auto 0 auto;
+  padding: 0.7rem 1.4rem;
+  background-color: rgb(17, 58, 92);
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.BackButton:hover {
+  background-color: rgb(34, 131, 184);
+  transform: scale(1.03);
+}
+
+/* Existing Career Details Styles ... */
+
+/* === CareerResourcesPage Styles === */
+.CareerResourcesPage {
+  background-color: #d0e0e4;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.CareerResourcesCard {
+  width: 100%;
+  max-width: 1100px;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 2.5rem;
+}
+
+.CareerResourcesCard h2 {
+  color: rgb(34, 131, 184);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.CareerResourcesBlurb {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.CareerResourcesBlurb p {
+  text-align: justify;
+  color: #333;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.CareerResourcesBlurb p:first-child {
+  font-size: 1.05rem;
+  text-align: justify;
+  font-weight: normal;
+}
+
+.CareerResourcesSections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.CareerResourceBlock {
+  background-color: #f8fbfc;
+  border: 1px solid #d7e7ee;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+}
+
+.CareerResourceBlock h3 {
+  color: rgb(17, 58, 92);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.CareerResourceBlock ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.CareerResourceBlock li {
+  margin-bottom: 0.8rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.CareerResourceBlock a {
+  color: rgb(34, 131, 184);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.CareerResourceBlock a:hover {
+  text-decoration: underline;
+  color: rgb(17, 58, 92);
+}
+
+.CareerResourcesEmpty {
+  text-align: center;
+  color: #555;
+  font-size: 1.05rem;
+  margin-top: 1rem;
+}
+
+/* Values page table polish */
+.ValuesTable {
+  width: 100%;
+  max-width: 1100px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 1rem;
+  background-color: white;
+  border: 1px solid #d6e4ea;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ValuesTable thead {
+  background-color: rgb(230, 241, 245);
+}
+
+.ValuesTable th {
+  color: rgb(17, 58, 92);
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #d6e4ea;
+}
+
+.ValuesTable td {
+  padding: 1.1rem 1.25rem;
+  vertical-align: top;
+  border-bottom: 1px solid #e8eff3;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #333;
+}
+
+.ValuesTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ValuesTable tbody tr:nth-child(even) {
+  background-color: #f8fbfc;
+}
+
+.ValuesTable tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.ValuesTable tbody tr:hover {
+  background-color: #f8fbfc;
+  cursor: default;
+  font-weight: normal;
+}
+
+.ValuesTable td:first-child,
+.ValuesTable th:first-child {
+  width: 28%;
+  min-width: 220px;
+  color: rgb(17, 58, 92);
+}
+
+.ValuesTable td:last-child,
+.ValuesTable th:last-child {
+  width: 72%;
+  text-align: left;
+}
+
+.ValuesTable td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: left;
+}
+
+/* Send to notes button */
+
+.CareerResourcesNotesFooter {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  border-top: 1px solid #d9d9d9;
+  background-color: #f8fbfd;
+  border-radius: 10px;
+}
+
+.CareerResourcesNotesFooter h3 {
+  margin-bottom: 0.5rem;
+  color: rgb(17, 58, 92);
+  font-size: 1.1rem;
+}
+
+.CareerResourcesNotesFooter p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.CareerResourcesNotesButton {
+  background-color: rgb(17, 58, 92);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.CareerResourcesNotesButton:hover {
+  background-color: rgb(11, 44, 70);
+}
+
+
+/* ==========================================================================
+   Notes page
+   ========================================================================== */
+
+.NotesHelperRow {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.NotesHelperText {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.NotesQuickTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.NotesQuickTag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6f1f5;
+  color: rgb(17, 58, 92);
+  border: 1px solid #d6e4ea;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.NotesEditorBlock {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.NotesLabel {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(17, 58, 92);
+  margin-bottom: 0.65rem;
+  text-align: left;
+}
+
+.NotesTextarea {
+  width: 100%;
+  min-height: 420px;
+  padding: 1rem 1.1rem;
+  border: 2px solid #d6e4ea;
+  border-radius: 12px;
+  background-color: #f8fbfc;
+  color: #333;
+  font-family: "Sen", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.NotesTextarea:focus {
+  outline: none;
+  border-color: rgb(34, 131, 184);
+  background-color: white;
+}
+
+.NotesTextarea::placeholder {
+  color: #6b7a86;
+  opacity: 1;
+}
+
+.NotesStatusRow {
+  width: 100%;
+  max-width: 900px;
+  margin: 0.9rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.NotesSaveStatus,
+.NotesLastUpdated {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgb(17, 58, 92);
+  font-family: "Work Sans", sans-serif;
+}
+
+.NotesSaveStatus {
+  font-weight: 600;
+}
+
+.NotesLastUpdated {
+  color: #5f6b73;
+}
+
+@media (max-width: 768px) {
+  .NotesHelperRow,
+  .NotesEditorBlock,
+  .NotesStatusRow {
+    max-width: 100%;
+  }
+
+  .NotesTextarea {
+    min-height: 320px;
+    font-size: 0.98rem;
+  }
+
+  .NotesStatusRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.MyPlanActionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  align-items: flex-start;
+}
+
+.ReachOutExtrasCard {
+  background: #f4f8fc;
+  border: 1px solid #d7e4f2;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.ReachOutExtrasCard h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #113a5c;
+  font-size: 1.05rem;
+}
+
+.ReachOutExtrasCard p {
+  margin: 0;
+}
+
+.ReachOutExtrasCard a {
+  color: #0b5cab;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.AlternateRealityGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.AlternateRealityCard {
+  background: #f8fbfd;
+  border: 1px solid #d9e6ef;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.AlternateRealityCard h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #113a5c;
+  font-size: 1.05rem;
+}
+
+.AlternateRealityLabel {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2f3d;
+}
+
+.AlternateRealityTextarea {
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #c9d7e2;
+  border-radius: 10px;
+  font: inherit;
+  line-height: 1.5;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.AlternateRealitySelect {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #c9d7e2;
+  border-radius: 10px;
+  font: inherit;
+  line-height: 1.5;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.AlternateRealityTextarea:focus,
+.AlternateRealitySelect:focus {
+  outline: none;
+  border-color: #0b5cab;
+  box-shadow: 0 0 0 3px rgba(11, 92, 171, 0.12);
+}
+
+@media (max-width: 768px) {
+  .AlternateRealityGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Responsive adjustments
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .Form {
+    width: calc(100vw - clamp(280px, 22vw, 360px) - 2rem);
+    padding: 1rem;
+  }
+
+  .ResultsCard {
+    width: calc(100vw - clamp(220px, 17vw, 280px) - 2rem);
+    margin: 1rem auto;
+  }
+
+  .formButtons {
+    padding: 1rem 1rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .CareerResourcesPage {
+    padding: 1rem;
+  }
+
+  .CareerResourcesCard {
+    padding: 1.5rem;
+  }
+
+  .CareerResourcesBlurb p {
+    text-align: left;
+  }
+
+  .CareerResourceBlock {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ValuesTable th,
+  .ValuesTable td {
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .ValuesTable td:first-child,
+  .ValuesTable th:first-child {
+    min-width: 160px;
+    white-space: normal;
+  }
+}
+
+/* Mobile/tablet stacked layout */
+@media (max-width: 768px) {
+  .FormPageContainer,
+  .ResultsLayout,
+  .ResultsMain {
+    flex-direction: column;
+  }
+
+  .sidenav,
+  .Rsidenav {
+    width: 100%;
+    position: relative;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #d6e4ea;
+  }
+
+  .Form {
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .questions,
+  .question,
+  .ResultsCard,
+  .FormContainer,
+  .LoginContainer,
+  .RegisterForm,
+  .LoginForm {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .formButtons {
+    width: 100%;
+    padding: 1rem 1rem 0;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .formButtons button,
+  .registerbutton {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ResultsCard {
+    margin: 1rem 0;
+    border-radius: 0;
+  }
+}
+
+/* ==========================================================================
+   Notes from prior additive patches
+   ========================================================================== */
+
+/*
+ * ═══════════════════════════════════════════════════════════════════════════
+ * GenomeIDP — App.css Phase 1 Bug Fix Patch
+ * ───────────────────────────────────────────────────────────────────────────
+ * Append these rules to the END of the existing App.css file.
+ * Do NOT replace App.css — these are additive changes only.
+ *
+ * Fixes included:
+ *   Bug #3  — Sidenav hover outline overflow
+ *   Bug #6  — Remove hover effect from non-clickable LowVarianceTable rows
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+/* ─────────────────────────────────────────────────────────────────────────────
+ * FIX: Bug #3 — Sidenav hover outline overflow
+ *
+ * Root cause: the previous .subsection-item:hover rule did not specify
+ * overflow:hidden on the parent .sidenav, so background highlights and any
+ * outline/border could bleed outside the nav boundary.
+ *
+ * Fix:
+ *   1. Add overflow:hidden to .sidenav so child highlights are clipped.
+ *   2. Replace any outline-based hover with a left-border highlight that
+ *      stays inside the container.
+ *   3. Add visual states for locked and completed sections.
+ * ───────────────────────────────────────────────────────────────────────── */
+
+/* ─────────────────────────────────────────────────────────────────────────────
+ * FIX: Bug #6 — Remove hover effect from non-clickable LowVarianceTable rows
+ *
+ * Root cause: the global .LowVarianceTable tr:hover rule applied a pointer
+ * cursor and highlight to every row, implying they were clickable, which was
+ * misleading on the career detail page.
+ *
+ * Fix: tables that should NOT have row hover effects are given the class
+ * "no-hover". The rule below resets cursor and background for those tables,
+ * overriding the global hover rule with higher specificity.
+ * ───────────────────────────────────────────────────────────────────────── */
+
+/* ==========================================================================
+   Organization pass notes
+   ========================================================================== */
+
+/*
+  This version intentionally updates only the survey sidenav system:
+  - .Form width / margin-left
+  - .sidenav width
+  - .subsection-item wrapping and padding
+
+  The results sidenav (.Rsidenav) and results layout are left unchanged.
+*/

@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Writing clear, tactful, and professional emails",
+    "expertAnswers": "5: 9",
+    "index": 49
+  },
+  {
+    "question": "Generating and using slides effectively (e.g., PowerPoint, Keynote)",
+    "expertAnswers": "5: 9",
+    "index": 50
+  },
+  {
+    "question": "Speaking clearly, effectively, and persuasively",
+    "expertAnswers": "4: 1; 5: 8",
+    "index": 51
+  },
+  {
+    "question": "Effectively and succinctly synthesizing / summarizing complex information to generate insights",
+    "expertAnswers": "4: 1; 5: 8",
+    "index": 55
+  },
+  {
+    "question": "Leveraging social media platforms to communicate science",
+    "expertAnswers": "4: 1; 5: 8",
+    "index": 58
+  },
+  {
+    "question": "Demonstrating workplace etiquette (e.g., punctuality, consideration, flexibility, gratitude)",
+    "expertAnswers": "4: 1; 5: 8",
+    "index": 61
+  },
+  {
+    "question": "Working effectively in a hierarchical team (e.g., collaboration, sharing timely updates, willingness to take on tasks for the good of the project / team, reporting to a team lead / supervisor)",
+    "expertAnswers": "4: 1; 5: 8",
+    "index": 65
+  },
+  {
+    "question": "Managing / leading a team, and / or working with direct reports",
+    "expertAnswers": "5: 9",
+    "index": 66
+  },
+  {
+    "question": "Adapting to changing goals, projects, and circumstances at work",
+    "expertAnswers": "5: 9",
+    "index": 68
+  },
+  {
+    "question": "Demonstrating accountability for one\u2019s actions, and a dedication to acting in accordance with the highest standards of professionalism",
+    "expertAnswers": "4: 1; 5: 8",
+    "index": 94
+  },
+  {
+    "question": "Writing new code, or optimizing / heavily modifying existing code",
+    "expertAnswers": "1: 7; 2: 2",
+    "index": 99
+  },
+  {
+    "question": "Performing research with human samples (e.g., tissue, blood, swabs)",
+    "expertAnswers": "1: 9",
+    "index": 110
+  },
+  {
+    "question": "Variant filtering, prioritization, and triaging from \u2018omics data",
+    "expertAnswers": "1: 9",
+    "index": 112
+  },
+  {
+    "question": "Using in silico tools for variant assessment",
+    "expertAnswers": "1: 9",
+    "index": 116
+  },
+  {
+    "question": "Interpreting information on novel variants",
+    "expertAnswers": "1: 9",
+    "index": 120
+  },
+  {
+    "question": "Implementing the ACMG and other important professional guidelines for germline variant analysis",
+    "expertAnswers": "1: 9",
+    "index": 121
+  },
+  {
+    "question": "Implementing AMP / ASCO and other professional guidelines for somatic / cancer variant analysis",
+    "expertAnswers": "1: 9",
+    "index": 122
+  },
+  {
+    "question": "Writing position papers or policy papers",
+    "expertAnswers": "1: 8; 2: 1",
+    "index": 133
+  },
+  {
+    "question": "Creating digital content (e.g., newsletters, social media posts, podcasts, webinars, websites)",
+    "expertAnswers": "5: 9",
+    "index": 136
+  },
+  {
+    "question": "Creating presentations",
+    "expertAnswers": "4: 1; 5: 8",
+    "index": 137
+  },
+  {
+    "question": "Speaking about science to scientists",
+    "expertAnswers": "4: 1; 5: 8",
+    "index": 143
+  },
+  {
+    "question": "Providing technical guidance on the application of products and policies related to genetic services",
+    "expertAnswers": "1: 8; 2: 1",
+    "index": 148
+  },
+  {
+    "question": "Communicating with / working with the media",
+    "expertAnswers": "1: 7; 2: 2",
+    "index": 150
+  },
+  {
+    "question": "Community service / social responsibility",
+    "expertAnswers": "5: 9",
+    "index": 153
+  }
+]

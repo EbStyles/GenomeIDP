@@ -1,0 +1,197 @@
+[
+  {
+    "question": "Broad knowledge of human genetics & molecular biology",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 1
+  },
+  {
+    "question": "Broad knowledge of genetic and genomic analytical and testing methodologies",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 3
+  },
+  {
+    "question": "Broad knowledge of fundamental statistical concepts applied to genetics",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 7
+  },
+  {
+    "question": "Deep knowledge of statistical tests used to analyze genomic data (e.g. NGS, GWAS, single-cell sequencing)",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 8
+  },
+  {
+    "question": "Broad knowledge of one or more programming languages, including literacy in interpreting code written by others",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 9
+  },
+  {
+    "question": "Deep knowledge of one or more programming languages to process and analyze \u2018omics-level data",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 10
+  },
+  {
+    "question": "Deep knowledge of genomic data file types and formats",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 11
+  },
+  {
+    "question": "Reading, writing, and manipulating code in one or more programming languages (e.g., R, Python)",
+    "expertAnswers": "5: 7",
+    "index": 18
+  },
+  {
+    "question": "\u2018Omics-relevant statistical analysis",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 19
+  },
+  {
+    "question": "Distributed cluster / cloud computing, & working with big data (i.e., running pipelines using UNIX / command line)",
+    "expertAnswers": "5: 7",
+    "index": 20
+  },
+  {
+    "question": "Data visualization and figure creation",
+    "expertAnswers": "5: 7",
+    "index": 25
+  },
+  {
+    "question": "Tolerance for repetitive / inconclusive, and for troubleshooting inconclusive / failed work",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 38
+  },
+  {
+    "question": "Writing genetic test reports",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 48
+  },
+  {
+    "question": "Presenting to / teaching scientists or medical professionals",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 52
+  },
+  {
+    "question": "Effectively and succinctly synthesizing / summarizing complex information to generate insights",
+    "expertAnswers": "5: 7",
+    "index": 55
+  },
+  {
+    "question": "Chairing / coordinating / hosting successful meetings",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 56
+  },
+  {
+    "question": "Complying with rules, guidelines, policies, laws, and regulations",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 62
+  },
+  {
+    "question": "Upholding commitments and meeting deadlines",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 63
+  },
+  {
+    "question": "Adapting to changing goals, projects, and circumstances at work",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 68
+  },
+  {
+    "question": "Problem solving and critical thinking",
+    "expertAnswers": "4: 4; 5: 3",
+    "index": 70
+  },
+  {
+    "question": "Providing constructive feedback",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 76
+  },
+  {
+    "question": "Designing and / or querying \u2018omics-level databases",
+    "expertAnswers": "3: 3; 4: 4",
+    "index": 96
+  },
+  {
+    "question": "Writing new code, or optimizing / heavily modifying existing code",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 99
+  },
+  {
+    "question": "Performing wet lab experiments / following protocols",
+    "expertAnswers": "1: 7",
+    "index": 103
+  },
+  {
+    "question": "Using & interpreting databases of genetic and genomic information",
+    "expertAnswers": "4: 4; 5: 3",
+    "index": 117
+  },
+  {
+    "question": "Implementing AMP / ASCO and other professional guidelines for somatic / cancer variant analysis",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 122
+  },
+  {
+    "question": "Writing / editing grant proposals",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 129
+  },
+  {
+    "question": "Writing / editing project reports / other business-related correspondence",
+    "expertAnswers": "1: 7",
+    "index": 131
+  },
+  {
+    "question": "Researching, analyzing, and / or evaluating existing policy and programs related to genetic services",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 132
+  },
+  {
+    "question": "Maintaining a professional presence on social media (e.g., LinkedIn)",
+    "expertAnswers": "1: 7",
+    "index": 135
+  },
+  {
+    "question": "Representing data in figures / illustrations, creating visual communications (e.g., infographics, posters)",
+    "expertAnswers": "1: 3; 2: 4",
+    "index": 139
+  },
+  {
+    "question": "Communicating with / responding to a variety of stakeholders and cross-functional / multidisciplinary team members",
+    "expertAnswers": "1: 7",
+    "index": 144
+  },
+  {
+    "question": "Building relationships / working directly with clients and / or customers",
+    "expertAnswers": "1: 5; 2: 2",
+    "index": 146
+  },
+  {
+    "question": "Providing technical guidance on the application of products and policies related to genetic services",
+    "expertAnswers": "1: 7",
+    "index": 148
+  },
+  {
+    "question": "Recruiting and tracking patients in clinical trials, including patient consenting and data collection",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 149
+  },
+  {
+    "question": "Communicating with / working with the media",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 150
+  },
+  {
+    "question": "Attending conferences or scientific meetings",
+    "expertAnswers": "1: 7",
+    "index": 161
+  },
+  {
+    "question": "Analyzing and managing financial data or budgets",
+    "expertAnswers": "1: 7",
+    "index": 162
+  },
+  {
+    "question": "Change management (i.e., dealing with transitions / transformations of goals, processes and / or technologies; moderating change)",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 171
+  }
+]

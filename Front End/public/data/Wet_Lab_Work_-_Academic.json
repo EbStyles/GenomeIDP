@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Broad knowledge of human genetics & molecular biology",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 1
+  },
+  {
+    "question": "Broad knowledge of genetic and genomic analytical and testing methodologies",
+    "expertAnswers": "4: 4; 5: 3",
+    "index": 3
+  },
+  {
+    "question": "Following protocols, standard operating procedures (SOPs) and guidelines",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 33
+  },
+  {
+    "question": "Tolerance / acceptance of uncertainty and ambiguity",
+    "expertAnswers": "4: 4; 5: 3",
+    "index": 37
+  },
+  {
+    "question": "Maintaining good records and documentation of dry lab work / clinical work (e.g., spreadsheets, reports)",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 40
+  },
+  {
+    "question": "Presenting to / teaching non-scientists or non-medical professionals",
+    "expertAnswers": "2: 2; 3: 5",
+    "index": 53
+  },
+  {
+    "question": "Effectively and succinctly synthesizing / summarizing complex information to generate insights",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 55
+  },
+  {
+    "question": "Training and mentoring individuals",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 59
+  },
+  {
+    "question": "Seeking advice and asking for feedback / clarification from advisors and mentors when needed",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 60
+  },
+  {
+    "question": "Demonstrating workplace etiquette (e.g., punctuality, consideration, flexibility, gratitude)",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 61
+  },
+  {
+    "question": "Complying with rules, guidelines, policies, laws, and regulations",
+    "expertAnswers": "5: 7",
+    "index": 62
+  },
+  {
+    "question": "Upholding commitments and meeting deadlines",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 63
+  },
+  {
+    "question": "Working effectively in a hierarchical team (e.g., collaboration, sharing timely updates, willingness to take on tasks for the good of the project / team, reporting to a team lead / supervisor)",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 65
+  },
+  {
+    "question": "Adapting to changing goals, projects, and circumstances at work",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 68
+  },
+  {
+    "question": "Working under pressure / managing tight deadlines",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 71
+  },
+  {
+    "question": "Building and maintaining positive relationships with colleagues, and an encouraging, supportive, and psychologically safe workplace culture",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 73
+  },
+  {
+    "question": "Providing constructive feedback",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 76
+  },
+  {
+    "question": "Demonstrating responsible writing practices (i.e., referencing appropriately)",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 93
+  },
+  {
+    "question": "Demonstrating accountability for one\u2019s actions, and a dedication to acting in accordance with the highest standards of professionalism",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 94
+  },
+  {
+    "question": "Recruiting and tracking patients in clinical trials, including patient consenting and data collection",
+    "expertAnswers": "1: 7",
+    "index": 149
+  },
+  {
+    "question": "Attending conferences or scientific meetings",
+    "expertAnswers": "1: 5; 2: 2",
+    "index": 161
+  },
+  {
+    "question": "Analyzing and managing financial data or budgets",
+    "expertAnswers": "1: 7",
+    "index": 162
+  }
+]

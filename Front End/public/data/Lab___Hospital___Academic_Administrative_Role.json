@@ -1,0 +1,202 @@
+[
+  {
+    "question": "Broad knowledge of human genetics & molecular biology",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 1
+  },
+  {
+    "question": "Critical evaluation of scientific and medical literature",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 12
+  },
+  {
+    "question": "Data visualization and figure creation",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 25
+  },
+  {
+    "question": "Maintaining good records and documentation of dry lab work / clinical work (e.g., spreadsheets, reports)",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 40
+  },
+  {
+    "question": "Writing clear and accurate research articles",
+    "expertAnswers": "4: 4; 5: 2",
+    "index": 42
+  },
+  {
+    "question": "Writing comprehensive and well researched literature reviews",
+    "expertAnswers": "4: 4; 5: 2",
+    "index": 43
+  },
+  {
+    "question": "Writing new SOPs / laboratory guidelines",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 45
+  },
+  {
+    "question": "Writing clear, tactful, and professional emails",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 49
+  },
+  {
+    "question": "Generating and using slides effectively (e.g., PowerPoint, Keynote)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 50
+  },
+  {
+    "question": "Speaking clearly, effectively, and persuasively",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 51
+  },
+  {
+    "question": "Training and mentoring individuals",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 59
+  },
+  {
+    "question": "Demonstrating workplace etiquette (e.g., punctuality, consideration, flexibility, gratitude)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 61
+  },
+  {
+    "question": "Complying with rules, guidelines, policies, laws, and regulations",
+    "expertAnswers": "5: 6",
+    "index": 62
+  },
+  {
+    "question": "Upholding commitments and meeting deadlines",
+    "expertAnswers": "5: 6",
+    "index": 63
+  },
+  {
+    "question": "Working effectively in a hierarchical team (e.g., collaboration, sharing timely updates, willingness to take on tasks for the good of the project / team, reporting to a team lead / supervisor)",
+    "expertAnswers": "5: 6",
+    "index": 65
+  },
+  {
+    "question": "Managing / leading a team, and / or working with direct reports",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 66
+  },
+  {
+    "question": "Planning, organizing, establishing priorities, and time management",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 67
+  },
+  {
+    "question": "Adapting to changing goals, projects, and circumstances at work",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 68
+  },
+  {
+    "question": "Problem solving and critical thinking",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 70
+  },
+  {
+    "question": "Working under pressure / managing tight deadlines",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 71
+  },
+  {
+    "question": "Resilience, self-awareness, and mindfulness of personal wellness and well-being",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 72
+  },
+  {
+    "question": "Building and maintaining positive relationships with colleagues, and an encouraging, supportive, and psychologically safe workplace culture",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 73
+  },
+  {
+    "question": "Managing conflict and conflict resolution, building consensus, compromising, and exercising tact and diplomacy in the workplace",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 74
+  },
+  {
+    "question": "Listening / being attentive",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 75
+  },
+  {
+    "question": "Providing constructive feedback",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 76
+  },
+  {
+    "question": "Receiving and incorporating constructive feedback",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 77
+  },
+  {
+    "question": "Marketing oneself effectively when seeking and applying for job opportunities (e.g., building a strong professional reputation, pitching oneself to potential employers, standing out from other applicants)",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 86
+  },
+  {
+    "question": "Demonstrating accountability for one\u2019s actions, and a dedication to acting in accordance with the highest standards of professionalism",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 94
+  },
+  {
+    "question": "Demonstrating cultural understanding and humility",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 95
+  },
+  {
+    "question": "Learning how to perform new techniques / protocols / use new equipment",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 104
+  },
+  {
+    "question": "Optimizing / modifying existing techniques / protocols / equipment",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 105
+  },
+  {
+    "question": "Using literature and / or new data to draw conclusions and make hypotheses",
+    "expertAnswers": "4: 4; 5: 2",
+    "index": 115
+  },
+  {
+    "question": "Keeping up with new / developments and events in science",
+    "expertAnswers": "3: 4; 4: 2",
+    "index": 127
+  },
+  {
+    "question": "Creating digital content (e.g., newsletters, social media posts, podcasts, webinars, websites)",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 136
+  },
+  {
+    "question": "Giving presentations",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 138
+  },
+  {
+    "question": "Providing technical guidance on the application of products and policies related to genetic services",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 148
+  },
+  {
+    "question": "Community service / social responsibility",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 153
+  },
+  {
+    "question": "Networking / making authentic connections with others in a professional setting",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 156
+  },
+  {
+    "question": "Coordinating and managing complex programs and projects",
+    "expertAnswers": "2: 2; 3: 4",
+    "index": 170
+  },
+  {
+    "question": "Change management (i.e., dealing with transitions / transformations of goals, processes and / or technologies; moderating change)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 171
+  }
+]

@@ -1,0 +1,457 @@
+[
+  {
+    "question": "Broad knowledge of human genetics & molecular biology",
+    "expertAnswers": "2: 4; 3: 2",
+    "index": 1
+  },
+  {
+    "question": "Broad knowledge of genetic and genomic analytical and testing methodologies",
+    "expertAnswers": "1: 3; 2: 3",
+    "index": 3
+  },
+  {
+    "question": "Deep knowledge of the applications, strengths, validation methods, and limitations of important genetic and genomic testing methodologies in research and/or clinical diagnostic settings (e.g. NGS testing)",
+    "expertAnswers": "1: 4; 2: 2",
+    "index": 4
+  },
+  {
+    "question": "Deep knowledge of statistical tests used to analyze genomic data (e.g. NGS, GWAS, single-cell sequencing)",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 8
+  },
+  {
+    "question": "Broad knowledge of one or more programming languages, including literacy in interpreting code written by others",
+    "expertAnswers": "1: 4; 2: 2",
+    "index": 9
+  },
+  {
+    "question": "Deep knowledge of one or more programming languages to process and analyze \u2018omics-level data",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 10
+  },
+  {
+    "question": "Deep knowledge of genomic data file types and formats",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 11
+  },
+  {
+    "question": "Interpretation and use of major genetic and genomic databases (e.g., OMIM, gnomAD, ClinVar, COSMIC)",
+    "expertAnswers": "1: 6",
+    "index": 17
+  },
+  {
+    "question": "Reading, writing, and manipulating code in one or more programming languages (e.g., R, Python)",
+    "expertAnswers": "1: 4; 2: 2",
+    "index": 18
+  },
+  {
+    "question": "\u2018Omics-relevant statistical analysis",
+    "expertAnswers": "1: 6",
+    "index": 19
+  },
+  {
+    "question": "Distributed cluster / cloud computing, & working with big data (i.e., running pipelines using UNIX / command line)",
+    "expertAnswers": "1: 6",
+    "index": 20
+  },
+  {
+    "question": "Validating informatics software",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 21
+  },
+  {
+    "question": "Bioinformatics pipeline creation / implementation for \u2018omics analysis (e.g., WES, WGS, RNASeq, Bisulfite-Seq)",
+    "expertAnswers": "1: 6",
+    "index": 22
+  },
+  {
+    "question": "Interpreting results / data from different types of genetics tests (e.g., panels, whole genome sequencing, RNA sequencing)",
+    "expertAnswers": "1: 6",
+    "index": 23
+  },
+  {
+    "question": "Interpreting results / data in either a germline or somatic context",
+    "expertAnswers": "1: 6",
+    "index": 24
+  },
+  {
+    "question": "Data visualization for assessment of mapping and variant call quality (e.g., using a genome browser)",
+    "expertAnswers": "1: 6",
+    "index": 26
+  },
+  {
+    "question": "Application of ACMG and other professional guidelines in germline variant analysis (e.g., VCEP guidelines)",
+    "expertAnswers": "1: 6",
+    "index": 27
+  },
+  {
+    "question": "Application of AMP / ASCO and other professional guidelines in somatic / cancer variant analysis (e.g., CAP guidelines)",
+    "expertAnswers": "1: 6",
+    "index": 28
+  },
+  {
+    "question": "Application of ClinGen and other professional guidelines for gene curation",
+    "expertAnswers": "1: 6",
+    "index": 29
+  },
+  {
+    "question": "Assessment of case and functional studies for variant analysis",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 30
+  },
+  {
+    "question": "Assessment of in silico prediction for variant analysis",
+    "expertAnswers": "1: 6",
+    "index": 31
+  },
+  {
+    "question": "Technical laboratory skills in genetics / genomics methodologies",
+    "expertAnswers": "1: 6",
+    "index": 32
+  },
+  {
+    "question": "Laboratory safety",
+    "expertAnswers": "1: 6",
+    "index": 34
+  },
+  {
+    "question": "Keeping a lab book & documenting lab work",
+    "expertAnswers": "1: 6",
+    "index": 39
+  },
+  {
+    "question": "Writing genetic test reports",
+    "expertAnswers": "1: 6",
+    "index": 48
+  },
+  {
+    "question": "Writing clear, tactful, and professional emails",
+    "expertAnswers": "5: 6",
+    "index": 49
+  },
+  {
+    "question": "Generating and using slides effectively (e.g., PowerPoint, Keynote)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 50
+  },
+  {
+    "question": "Speaking clearly, effectively, and persuasively",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 51
+  },
+  {
+    "question": "Effectively and succinctly synthesizing / summarizing complex information to generate insights",
+    "expertAnswers": "5: 6",
+    "index": 55
+  },
+  {
+    "question": "Creating visual communications (e.g., posters, infographics, figures)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 57
+  },
+  {
+    "question": "Leveraging social media platforms to communicate science",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 58
+  },
+  {
+    "question": "Training and mentoring individuals",
+    "expertAnswers": "5: 6",
+    "index": 59
+  },
+  {
+    "question": "Demonstrating workplace etiquette (e.g., punctuality, consideration, flexibility, gratitude)",
+    "expertAnswers": "5: 6",
+    "index": 61
+  },
+  {
+    "question": "Complying with rules, guidelines, policies, laws, and regulations",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 62
+  },
+  {
+    "question": "Upholding commitments and meeting deadlines",
+    "expertAnswers": "5: 6",
+    "index": 63
+  },
+  {
+    "question": "Working independently, with initiative, and in a self-motivated fashion",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 64
+  },
+  {
+    "question": "Working effectively in a hierarchical team (e.g., collaboration, sharing timely updates, willingness to take on tasks for the good of the project / team, reporting to a team lead / supervisor)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 65
+  },
+  {
+    "question": "Managing / leading a team, and / or working with direct reports",
+    "expertAnswers": "5: 6",
+    "index": 66
+  },
+  {
+    "question": "Planning, organizing, establishing priorities, and time management",
+    "expertAnswers": "5: 6",
+    "index": 67
+  },
+  {
+    "question": "Adapting to changing goals, projects, and circumstances at work",
+    "expertAnswers": "5: 6",
+    "index": 68
+  },
+  {
+    "question": "Creativity / innovative and strategic thinking",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 69
+  },
+  {
+    "question": "Problem solving and critical thinking",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 70
+  },
+  {
+    "question": "Working under pressure / managing tight deadlines",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 71
+  },
+  {
+    "question": "Resilience, self-awareness, and mindfulness of personal wellness and well-being",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 72
+  },
+  {
+    "question": "Listening / being attentive",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 75
+  },
+  {
+    "question": "Providing constructive feedback",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 76
+  },
+  {
+    "question": "Creating and maintaining a professional network (e.g., meeting people, maintaining connections)",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 82
+  },
+  {
+    "question": "Marketing oneself effectively when seeking and applying for job opportunities (e.g., building a strong professional reputation, pitching oneself to potential employers, standing out from other applicants)",
+    "expertAnswers": "4: 4; 5: 2",
+    "index": 86
+  },
+  {
+    "question": "Understanding informed consent in the context of genetic testing",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 89
+  },
+  {
+    "question": "Designing and / or querying \u2018omics-level databases",
+    "expertAnswers": "1: 6",
+    "index": 96
+  },
+  {
+    "question": "Designing analysis pipelines for \u2018omics data",
+    "expertAnswers": "1: 6",
+    "index": 97
+  },
+  {
+    "question": "Using code / pipelines written by others, with no (or with minor) modification, general maintenance of existing pipelines",
+    "expertAnswers": "1: 6",
+    "index": 98
+  },
+  {
+    "question": "Writing new code, or optimizing / heavily modifying existing code",
+    "expertAnswers": "1: 6",
+    "index": 99
+  },
+  {
+    "question": "Installing, testing, and debugging bioinformatics software for \u2018omics data analysis",
+    "expertAnswers": "1: 6",
+    "index": 100
+  },
+  {
+    "question": "Performing statistical analysis on \u2018omics data",
+    "expertAnswers": "1: 6",
+    "index": 101
+  },
+  {
+    "question": "Performing wet lab experiments / following protocols",
+    "expertAnswers": "1: 6",
+    "index": 103
+  },
+  {
+    "question": "Learning how to perform new techniques / protocols / use new equipment",
+    "expertAnswers": "1: 6",
+    "index": 104
+  },
+  {
+    "question": "Optimizing / modifying existing techniques / protocols / equipment",
+    "expertAnswers": "1: 6",
+    "index": 105
+  },
+  {
+    "question": "Designing new wet or dry lab experiments, techniques, protocols, and / or experimental tools",
+    "expertAnswers": "1: 6",
+    "index": 106
+  },
+  {
+    "question": "Creating new standard operating procedures (SOPs) / laboratory guidelines / manuals",
+    "expertAnswers": "1: 6",
+    "index": 107
+  },
+  {
+    "question": "Performing research with pre-clinical samples (e.g., rodents, cell lines)",
+    "expertAnswers": "1: 6",
+    "index": 109
+  },
+  {
+    "question": "Performing research with human samples (e.g., tissue, blood, swabs)",
+    "expertAnswers": "1: 6",
+    "index": 110
+  },
+  {
+    "question": "Performing clinical research / trials involving patients",
+    "expertAnswers": "1: 6",
+    "index": 111
+  },
+  {
+    "question": "Variant filtering, prioritization, and triaging from \u2018omics data",
+    "expertAnswers": "1: 6",
+    "index": 112
+  },
+  {
+    "question": "Using in silico tools for variant assessment",
+    "expertAnswers": "1: 6",
+    "index": 116
+  },
+  {
+    "question": "Using & interpreting databases of genetic and genomic information",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 117
+  },
+  {
+    "question": "Working with genome browsers",
+    "expertAnswers": "1: 6",
+    "index": 118
+  },
+  {
+    "question": "Interpreting information on existing published variants",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 119
+  },
+  {
+    "question": "Interpreting information on novel variants",
+    "expertAnswers": "1: 6",
+    "index": 120
+  },
+  {
+    "question": "Implementing the ACMG and other important professional guidelines for germline variant analysis",
+    "expertAnswers": "1: 6",
+    "index": 121
+  },
+  {
+    "question": "Implementing AMP / ASCO and other professional guidelines for somatic / cancer variant analysis",
+    "expertAnswers": "1: 6",
+    "index": 122
+  },
+  {
+    "question": "Implementing ClinGen and other professional guidelines for gene curation",
+    "expertAnswers": "1: 6",
+    "index": 123
+  },
+  {
+    "question": "Providing actionable results that can impact patient care",
+    "expertAnswers": "1: 4; 2: 2",
+    "index": 124
+  },
+  {
+    "question": "Writing / editing grant proposals",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 129
+  },
+  {
+    "question": "Writing / editing research ethics proposals",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 130
+  },
+  {
+    "question": "Writing position papers or policy papers",
+    "expertAnswers": "1: 6",
+    "index": 133
+  },
+  {
+    "question": "Writing variant analysis reports based on professional guidelines and lab / clinic-specific requirements",
+    "expertAnswers": "3: 5; 4: 1",
+    "index": 134
+  },
+  {
+    "question": "Creating digital content (e.g., newsletters, social media posts, podcasts, webinars, websites)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 136
+  },
+  {
+    "question": "Giving presentations",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 138
+  },
+  {
+    "question": "Speaking about science to scientists",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 143
+  },
+  {
+    "question": "Working directly with patients",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 145
+  },
+  {
+    "question": "Advocacy, both personal and on behalf of others, particularly marginalized groups, for acute issues and system-wide change",
+    "expertAnswers": "1: 6",
+    "index": 147
+  },
+  {
+    "question": "Providing technical guidance on the application of products and policies related to genetic services",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 148
+  },
+  {
+    "question": "Recruiting and tracking patients in clinical trials, including patient consenting and data collection",
+    "expertAnswers": "1: 4; 2: 2",
+    "index": 149
+  },
+  {
+    "question": "Communicating with / working with the media",
+    "expertAnswers": "1: 6",
+    "index": 150
+  },
+  {
+    "question": "Community service / social responsibility",
+    "expertAnswers": "5: 6",
+    "index": 153
+  },
+  {
+    "question": "Working in a team",
+    "expertAnswers": "4: 5; 5: 1",
+    "index": 154
+  },
+  {
+    "question": "Participating on workplace / organizational committees",
+    "expertAnswers": "4: 5; 5: 1",
+    "index": 155
+  },
+  {
+    "question": "Assessing business trends, strategies, and competitive activity; entrepreneurial ideas",
+    "expertAnswers": "4: 4; 5: 2",
+    "index": 163
+  },
+  {
+    "question": "Building and managing relationships with stakeholders",
+    "expertAnswers": "4: 4; 5: 2",
+    "index": 164
+  },
+  {
+    "question": "Planning or organizing events (e.g., conferences, tours, symposia, speaker series)",
+    "expertAnswers": "3: 2; 4: 4",
+    "index": 169
+  }
+]

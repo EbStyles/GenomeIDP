@@ -1,0 +1,312 @@
+[
+  {
+    "question": "Broad knowledge of genetic and genomic analytical and testing methodologies",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 3
+  },
+  {
+    "question": "Critical evaluation of scientific and medical literature",
+    "expertAnswers": "5: 6",
+    "index": 12
+  },
+  {
+    "question": "Interpretation and use of major genetic and genomic databases (e.g., OMIM, gnomAD, ClinVar, COSMIC)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 17
+  },
+  {
+    "question": "\u2018Omics-relevant statistical analysis",
+    "expertAnswers": "2: 1; 3: 5",
+    "index": 19
+  },
+  {
+    "question": "Validating informatics software",
+    "expertAnswers": "1: 1; 2: 5",
+    "index": 21
+  },
+  {
+    "question": "Interpreting results / data in either a germline or somatic context",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 24
+  },
+  {
+    "question": "Following protocols, standard operating procedures (SOPs) and guidelines",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 33
+  },
+  {
+    "question": "Establishing frameworks to collect, analyze, and interpret data and information from a variety of sources",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 36
+  },
+  {
+    "question": "Tolerance / acceptance of uncertainty and ambiguity",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 37
+  },
+  {
+    "question": "Tolerance for repetitive / inconclusive, and for troubleshooting inconclusive / failed work",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 38
+  },
+  {
+    "question": "Maintaining good records and documentation of dry lab work / clinical work (e.g., spreadsheets, reports)",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 40
+  },
+  {
+    "question": "Writing clear, tactful, and professional emails",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 49
+  },
+  {
+    "question": "Generating and using slides effectively (e.g., PowerPoint, Keynote)",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 50
+  },
+  {
+    "question": "Presenting to / teaching scientists or medical professionals",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 52
+  },
+  {
+    "question": "Effectively and succinctly synthesizing / summarizing complex information to generate insights",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 55
+  },
+  {
+    "question": "Training and mentoring individuals",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 59
+  },
+  {
+    "question": "Seeking advice and asking for feedback / clarification from advisors and mentors when needed",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 60
+  },
+  {
+    "question": "Demonstrating workplace etiquette (e.g., punctuality, consideration, flexibility, gratitude)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 61
+  },
+  {
+    "question": "Complying with rules, guidelines, policies, laws, and regulations",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 62
+  },
+  {
+    "question": "Upholding commitments and meeting deadlines",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 63
+  },
+  {
+    "question": "Working effectively in a hierarchical team (e.g., collaboration, sharing timely updates, willingness to take on tasks for the good of the project / team, reporting to a team lead / supervisor)",
+    "expertAnswers": "5: 6",
+    "index": 65
+  },
+  {
+    "question": "Managing / leading a team, and / or working with direct reports",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 66
+  },
+  {
+    "question": "Planning, organizing, establishing priorities, and time management",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 67
+  },
+  {
+    "question": "Adapting to changing goals, projects, and circumstances at work",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 68
+  },
+  {
+    "question": "Creativity / innovative and strategic thinking",
+    "expertAnswers": "4: 4; 5: 2",
+    "index": 69
+  },
+  {
+    "question": "Problem solving and critical thinking",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 70
+  },
+  {
+    "question": "Working under pressure / managing tight deadlines",
+    "expertAnswers": "5: 6",
+    "index": 71
+  },
+  {
+    "question": "Resilience, self-awareness, and mindfulness of personal wellness and well-being",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 72
+  },
+  {
+    "question": "Building and maintaining positive relationships with colleagues, and an encouraging, supportive, and psychologically safe workplace culture",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 73
+  },
+  {
+    "question": "Listening / being attentive",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 75
+  },
+  {
+    "question": "Providing constructive feedback",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 76
+  },
+  {
+    "question": "Contributing to and incorporating awareness and adoption of inclusion, diversity, equity, and accessibility issues and guidelines in the workplace",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 79
+  },
+  {
+    "question": "Identifying career options and setting career goals",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 81
+  },
+  {
+    "question": "Creating and maintaining a professional network (e.g., meeting people, maintaining connections)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 82
+  },
+  {
+    "question": "Marketing oneself effectively when seeking and applying for job opportunities (e.g., building a strong professional reputation, pitching oneself to potential employers, standing out from other applicants)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 86
+  },
+  {
+    "question": "Understanding privacy and disclosure issues in the context of medical genetics",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 88
+  },
+  {
+    "question": "Understanding responsible conduct in human research (e.g., clinical trials, obtaining ethics approval)",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 91
+  },
+  {
+    "question": "Demonstrating responsible writing practices (i.e., referencing appropriately)",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 93
+  },
+  {
+    "question": "Demonstrating accountability for one\u2019s actions, and a dedication to acting in accordance with the highest standards of professionalism",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 94
+  },
+  {
+    "question": "Demonstrating cultural understanding and humility",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 95
+  },
+  {
+    "question": "Writing new code, or optimizing / heavily modifying existing code",
+    "expertAnswers": "1: 5; 2: 1",
+    "index": 99
+  },
+  {
+    "question": "Installing, testing, and debugging bioinformatics software for \u2018omics data analysis",
+    "expertAnswers": "1: 3; 2: 3",
+    "index": 100
+  },
+  {
+    "question": "Variant filtering, prioritization, and triaging from \u2018omics data",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 112
+  },
+  {
+    "question": "Performing literature searches and reviews",
+    "expertAnswers": "5: 6",
+    "index": 113
+  },
+  {
+    "question": "Critically reading scientific and medical literature",
+    "expertAnswers": "5: 6",
+    "index": 114
+  },
+  {
+    "question": "Using literature and / or new data to draw conclusions and make hypotheses",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 115
+  },
+  {
+    "question": "Using & interpreting databases of genetic and genomic information",
+    "expertAnswers": "5: 6",
+    "index": 117
+  },
+  {
+    "question": "Working with genome browsers",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 118
+  },
+  {
+    "question": "Interpreting information on existing published variants",
+    "expertAnswers": "5: 6",
+    "index": 119
+  },
+  {
+    "question": "Interpreting information on novel variants",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 120
+  },
+  {
+    "question": "Solving research / clinical mysteries and answering important scientific questions about human health and disease",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 125
+  },
+  {
+    "question": "Lifelong learning and continuous professional development",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 126
+  },
+  {
+    "question": "Working directly with patients",
+    "expertAnswers": "1: 3; 2: 3",
+    "index": 145
+  },
+  {
+    "question": "Recruiting and tracking patients in clinical trials, including patient consenting and data collection",
+    "expertAnswers": "1: 6",
+    "index": 149
+  },
+  {
+    "question": "Communicating with / working with the media",
+    "expertAnswers": "1: 4; 2: 2",
+    "index": 150
+  },
+  {
+    "question": "Teaching in a classroom setting",
+    "expertAnswers": "2: 1; 3: 5",
+    "index": 151
+  },
+  {
+    "question": "Community service / social responsibility",
+    "expertAnswers": "4: 1; 5: 5",
+    "index": 153
+  },
+  {
+    "question": "Participating on workplace / organizational committees",
+    "expertAnswers": "4: 3; 5: 3",
+    "index": 155
+  },
+  {
+    "question": "Networking / making authentic connections with others in a professional setting",
+    "expertAnswers": "4: 2; 5: 4",
+    "index": 156
+  },
+  {
+    "question": "Work-related travel",
+    "expertAnswers": "5: 6",
+    "index": 159
+  },
+  {
+    "question": "Attending conferences or scientific meetings",
+    "expertAnswers": "1: 6",
+    "index": 161
+  },
+  {
+    "question": "Analyzing and managing financial data or budgets",
+    "expertAnswers": "1: 6",
+    "index": 162
+  }
+]

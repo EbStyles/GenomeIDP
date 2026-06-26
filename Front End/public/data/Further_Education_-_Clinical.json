@@ -1,0 +1,267 @@
+[
+  {
+    "question": "Broad knowledge of human genetics & molecular biology",
+    "expertAnswers": "5: 7",
+    "index": 1
+  },
+  {
+    "question": "Deep knowledge of the fundamental and logistical differences between clinical and research genetic testing",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 5
+  },
+  {
+    "question": "Critical evaluation of scientific and medical literature",
+    "expertAnswers": "5: 7",
+    "index": 12
+  },
+  {
+    "question": "Interpretation and use of major genetic and genomic databases (e.g., OMIM, gnomAD, ClinVar, COSMIC)",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 17
+  },
+  {
+    "question": "Interpreting results / data from different types of genetics tests (e.g., panels, whole genome sequencing, RNA sequencing)",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 23
+  },
+  {
+    "question": "Interpreting results / data in either a germline or somatic context",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 24
+  },
+  {
+    "question": "Keeping a lab book & documenting lab work",
+    "expertAnswers": "1: 7",
+    "index": 39
+  },
+  {
+    "question": "Writing for medical professionals",
+    "expertAnswers": "5: 7",
+    "index": 46
+  },
+  {
+    "question": "Writing clear, tactful, and professional emails",
+    "expertAnswers": "5: 7",
+    "index": 49
+  },
+  {
+    "question": "Generating and using slides effectively (e.g., PowerPoint, Keynote)",
+    "expertAnswers": "5: 7",
+    "index": 50
+  },
+  {
+    "question": "Speaking clearly, effectively, and persuasively",
+    "expertAnswers": "5: 7",
+    "index": 51
+  },
+  {
+    "question": "Presenting to / teaching scientists or medical professionals",
+    "expertAnswers": "5: 7",
+    "index": 52
+  },
+  {
+    "question": "Effectively and succinctly synthesizing / summarizing complex information to generate insights",
+    "expertAnswers": "5: 7",
+    "index": 55
+  },
+  {
+    "question": "Training and mentoring individuals",
+    "expertAnswers": "5: 7",
+    "index": 59
+  },
+  {
+    "question": "Seeking advice and asking for feedback / clarification from advisors and mentors when needed",
+    "expertAnswers": "5: 7",
+    "index": 60
+  },
+  {
+    "question": "Demonstrating workplace etiquette (e.g., punctuality, consideration, flexibility, gratitude)",
+    "expertAnswers": "5: 7",
+    "index": 61
+  },
+  {
+    "question": "Complying with rules, guidelines, policies, laws, and regulations",
+    "expertAnswers": "5: 7",
+    "index": 62
+  },
+  {
+    "question": "Upholding commitments and meeting deadlines",
+    "expertAnswers": "5: 7",
+    "index": 63
+  },
+  {
+    "question": "Working effectively in a hierarchical team (e.g., collaboration, sharing timely updates, willingness to take on tasks for the good of the project / team, reporting to a team lead / supervisor)",
+    "expertAnswers": "5: 7",
+    "index": 65
+  },
+  {
+    "question": "Managing / leading a team, and / or working with direct reports",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 66
+  },
+  {
+    "question": "Problem solving and critical thinking",
+    "expertAnswers": "5: 7",
+    "index": 70
+  },
+  {
+    "question": "Working under pressure / managing tight deadlines",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 71
+  },
+  {
+    "question": "Building and maintaining positive relationships with colleagues, and an encouraging, supportive, and psychologically safe workplace culture",
+    "expertAnswers": "5: 7",
+    "index": 73
+  },
+  {
+    "question": "Receiving and incorporating constructive feedback",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 77
+  },
+  {
+    "question": "Contributing to ongoing workplace professional development (e.g., member of committees / professional societies)",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 78
+  },
+  {
+    "question": "Working with and adapting to the needs of patients / clients / stakeholders / community members from diverse and varied populations",
+    "expertAnswers": "5: 7",
+    "index": 80
+  },
+  {
+    "question": "Understanding privacy and disclosure issues in the context of medical genetics",
+    "expertAnswers": "5: 7",
+    "index": 88
+  },
+  {
+    "question": "Understanding informed consent in the context of genetic testing",
+    "expertAnswers": "5: 7",
+    "index": 89
+  },
+  {
+    "question": "Understanding the impact of genetic testing technologies on patients and the healthcare system",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 90
+  },
+  {
+    "question": "Understanding responsible conduct in human research (e.g., clinical trials, obtaining ethics approval)",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 91
+  },
+  {
+    "question": "Identifying and responding to ethical and legal issues in a professional and clinical environment with moral courage (i.e., when it is not easy to do so; e.g., when it involves a peer or a supervisor)",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 92
+  },
+  {
+    "question": "Demonstrating accountability for one\u2019s actions, and a dedication to acting in accordance with the highest standards of professionalism",
+    "expertAnswers": "5: 7",
+    "index": 94
+  },
+  {
+    "question": "Designing and / or querying \u2018omics-level databases",
+    "expertAnswers": "1: 4; 2: 3",
+    "index": 96
+  },
+  {
+    "question": "Designing analysis pipelines for \u2018omics data",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 97
+  },
+  {
+    "question": "Using code / pipelines written by others, with no (or with minor) modification, general maintenance of existing pipelines",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 98
+  },
+  {
+    "question": "Writing new code, or optimizing / heavily modifying existing code",
+    "expertAnswers": "1: 7",
+    "index": 99
+  },
+  {
+    "question": "Installing, testing, and debugging bioinformatics software for \u2018omics data analysis",
+    "expertAnswers": "1: 7",
+    "index": 100
+  },
+  {
+    "question": "Performing statistical analysis on \u2018omics data",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 101
+  },
+  {
+    "question": "Analyzing and interpreting experimental (pipeline) results",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 102
+  },
+  {
+    "question": "Performing wet lab experiments / following protocols",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 103
+  },
+  {
+    "question": "Learning how to perform new techniques / protocols / use new equipment",
+    "expertAnswers": "1: 5; 2: 2",
+    "index": 104
+  },
+  {
+    "question": "Performing research with pre-clinical samples (e.g., rodents, cell lines)",
+    "expertAnswers": "1: 6; 2: 1",
+    "index": 109
+  },
+  {
+    "question": "Performing literature searches and reviews",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 113
+  },
+  {
+    "question": "Critically reading scientific and medical literature",
+    "expertAnswers": "5: 7",
+    "index": 114
+  },
+  {
+    "question": "Using literature and / or new data to draw conclusions and make hypotheses",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 115
+  },
+  {
+    "question": "Interpreting information on existing published variants",
+    "expertAnswers": "4: 4; 5: 3",
+    "index": 119
+  },
+  {
+    "question": "Lifelong learning and continuous professional development",
+    "expertAnswers": "4: 2; 5: 5",
+    "index": 126
+  },
+  {
+    "question": "Creating digital content (e.g., newsletters, social media posts, podcasts, webinars, websites)",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 136
+  },
+  {
+    "question": "Speaking about science to non-scientists",
+    "expertAnswers": "4: 3; 5: 4",
+    "index": 142
+  },
+  {
+    "question": "Communicating with / responding to a variety of stakeholders and cross-functional / multidisciplinary team members",
+    "expertAnswers": "5: 7",
+    "index": 144
+  },
+  {
+    "question": "Community service / social responsibility",
+    "expertAnswers": "5: 7",
+    "index": 153
+  },
+  {
+    "question": "Work-related travel",
+    "expertAnswers": "4: 1; 5: 6",
+    "index": 159
+  },
+  {
+    "question": "Change management (i.e., dealing with transitions / transformations of goals, processes and / or technologies; moderating change)",
+    "expertAnswers": "5: 7",
+    "index": 171
+  }
+]
