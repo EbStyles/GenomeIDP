@@ -15,7 +15,7 @@ const MyNotesPage = ({ notes, setNotes }) => {
       if (!user?.token) return;
 
       try {
-        const response = await fetch("/api/notes", {
+        const response = await fetch("https://genomeidp-back-end-tis4.onrender.com/api/notes", {
           headers: {
             "Authorization": `Bearer ${user.token}`,
           },
@@ -58,7 +58,7 @@ const MyNotesPage = ({ notes, setNotes }) => {
 
     saveTimeoutRef.current = setTimeout(async () => {
       try {
-        const response = await fetch("/api/notes", {
+        const response = await fetch("https://genomeidp-back-end-tis4.onrender.com/api/notes", {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",

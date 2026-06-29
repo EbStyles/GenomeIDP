@@ -112,7 +112,7 @@ const CareerDetails = () => {
         const fetchUserAnswers = async () => {
             if (!user?.user?.token) return;
             try {
-                const response = await fetch('/api/form/', {
+                const response = await fetch('https://genomeidp-back-end-tis4.onrender.com/api/form/', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

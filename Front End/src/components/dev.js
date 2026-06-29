@@ -7,7 +7,7 @@ const [users,setUsers] = useState(null)
 
 useEffect(() => {
     const fetchUsers = async() => {
-         const response = await fetch("/api/auth")
+         const response = await fetch("https://genomeidp-back-end-tis4.onrender.com/api/auth")
          const json = await response.json()
 
          console.log(json)

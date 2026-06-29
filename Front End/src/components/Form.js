@@ -109,7 +109,7 @@ const Form = () => {
     useEffect(() => {
         const fetchSavedAnswers = async () => {
             try {
-                const response = await fetch('/api/form/', {
+                const response = await fetch('https://genomeidp-back-end-tis4.onrender.com/api/form/', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -355,7 +355,7 @@ const Form = () => {
             setSurveyComplete(true);
             // ─────────────────────────────────────────────────────────────────
 
-            const matchResponse = await fetch('/api/match/', {
+            const matchResponse = await fetch('https://genomeidp-back-end-tis4.onrender.com/api/match/', {
                 method: 'GET',
                 headers: { 'Authorization': `Bearer ${user.user.token}` }
             });
@@ -473,7 +473,7 @@ const Form = () => {
         };
 
         try {
-            const response = await fetch('/api/form/', {
+            const response = await fetch('https://genomeidp-back-end-tis4.onrender.com/api/form/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

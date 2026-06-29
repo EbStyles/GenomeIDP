@@ -41,8 +41,8 @@ const Login = () => {
 
                 <h2>Login to continue your GenomeIDP journey</h2>
 
-                <div className="LoginForm" onSubmit={handleSubmit}>
-                    <form>
+                <div className="LoginForm"> 
+                	<form onSubmit={handleSubmit}>
                         <div>
                             <label>Username:</label>
                             <input
@@ -79,7 +79,7 @@ const Login = () => {
                         >
                             {isLoading ? 'Logging in...' : 'Login'}
                         </button>
-                        {error && <p classname="error"> {error} </p>}
+                        {error && <p className="error">{error}</p>}
                     </form>
                 </div>
                 <div className="login-link">

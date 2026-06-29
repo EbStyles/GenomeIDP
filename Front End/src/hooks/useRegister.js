@@ -11,7 +11,7 @@ export const useRegister = () => {
         setError(null)
         setIsLoading(true)
 
-        const response = await fetch('/api/auth/signup', {
+        const response = await fetch('https://genomeidp-back-end-tis4.onrender.com/api/auth/signup', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({username,password})   
