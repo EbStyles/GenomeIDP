@@ -79,6 +79,7 @@ const CAREER_VALUES_QUESTIONS = [
 ];
 
 const API_BASE = process.env.REACT_APP_API_URL || "";
+
 const Results = () => {
     const location = useLocation();
     const history = useHistory();
@@ -724,7 +725,7 @@ const Results = () => {
             if (!user?.user?.token) return;
 
             try {
-                const response = await fetch("/api/form/", {
+                const response = await fetch(`${API_BASE}/api/form/`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
@@ -818,7 +819,7 @@ const Results = () => {
             setIsAutosavingAlt(true);
 
     try {
-        const response = await fetch("/api/form/", {
+        const response = await fetch(`${API_BASE}/api/form/`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
@@ -870,7 +871,7 @@ const Results = () => {
         	setIsAutosavingCareerAdvancement(true);
 
         	try {
-            	const response = await fetch("/api/form/", {
+            	const response = await fetch(`${API_BASE}/api/form/`, {
                 	method: "PATCH",
                 	headers: {
                     	"Content-Type": "application/json",
@@ -912,7 +913,7 @@ const Results = () => {
         	setIsAutosavingSkillBuilding(true);
 
         	try {
-           		const response = await fetch("/api/form/", {
+           		const response = await fetch(`${API_BASE}/api/form/`, {
                 	method: "PATCH",
                 	headers: {
                     	"Content-Type": "application/json",
@@ -952,7 +953,7 @@ const Results = () => {
         	setIsAutosavingCurrentProgram(true);
 
         	try {
-            	const response = await fetch("/api/form/", {
+            	const response = await fetch(`${API_BASE}/api/form/`, {
                 	method: "PATCH",
                 	headers: {
                     	"Content-Type": "application/json",
@@ -994,7 +995,7 @@ const Results = () => {
         	setIsAutosavingMentors(true);
 
         	try {
-            	const response = await fetch("/api/form/", {
+            	const response = await fetch(`${API_BASE}/api/form/`, {
                 	method: "PATCH",
                 	headers: {
                     	"Content-Type": "application/json",
