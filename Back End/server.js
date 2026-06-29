@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express')
+const cors = require('cors')
 const formRoutes = require('./routes/form')
 const authRoutes = require('./routes/auth')
 const matchRoutes = require('./routes/match');
@@ -10,6 +11,7 @@ const mongoose = require("mongoose")
 const app = express()
 
 // Middleware that runs every time a request comes in
+app.use(cors())
 app.use(express.json())
 
 // Log information about the request
