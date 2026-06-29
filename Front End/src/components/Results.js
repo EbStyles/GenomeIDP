@@ -734,22 +734,6 @@ const Results = () => {
                 });
 
                 if (!response.ok) throw new Error("Failed to fetch form data");
-
-                
-                // ─────────────────────────────────────────────────────────────────────────
-    			// Temporary debug check.
-    			// ─────────────────────────────────────────────────────────────────────────
-                
-                console.log("Fetching:", `${API_BASE}/api/form/`);
-				console.log("Response status:", response.status);
-				console.log("Response content-type:", response.headers.get("content-type"));
-				const text = await response.text();
-				console.log("Raw response:", text.slice(0, 300));
-                
-                
-                // ─────────────────────────────────────────────────────────────────────────
-    			// End of temporary debug check.
-    			// ─────────────────────────────────────────────────────────────────────────
                 
                 const form = await response.json();
                 
@@ -805,14 +789,15 @@ const Results = () => {
                     const derived = [];
                     const answersObj = valuesSection.answers;
 
+                    console.log("valuesSection", valuesSection);
+					console.log("derived topValues", derived);
+                    
                     for (const [indexStr, score] of Object.entries(answersObj)) {
                         const idx = Number(indexStr);
                         const numericScore = Number(score);
                         const valueName = CAREER_VALUES_QUESTIONS[idx];
 
                         console.log("Career Value debug:", { indexStr, idx, numericScore, valueName });
-                        console.log("valuesSection", valuesSection);
-						console.log("derived topValues", derived);
                         
                         if (numericScore === 5 && valueName) {
                             derived.push({
@@ -822,6 +807,7 @@ const Results = () => {
                         }
                     }
 
+                    console.log("derived topValues FINAL", derived);
                     setTopValues(derived);
                 }
             } catch (err) {
