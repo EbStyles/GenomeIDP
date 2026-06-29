@@ -810,6 +810,10 @@ const Results = () => {
                         const numericScore = Number(score);
                         const valueName = CAREER_VALUES_QUESTIONS[idx];
 
+                        console.log("Career Value debug:", { indexStr, idx, numericScore, valueName });
+                        console.log("valuesSection", valuesSection);
+						console.log("derived topValues", derived);
+                        
                         if (numericScore === 5 && valueName) {
                             derived.push({
                                 name: valueName,
