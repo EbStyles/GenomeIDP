@@ -722,19 +722,35 @@ const Results = () => {
     
     useEffect(() => {
         const fetchResponses = async () => {
-            if (!user?.user?.token) return;
+            if (!user?.token) return;
 
             try {
                 const response = await fetch(`${API_BASE}/api/form/`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
-                        "Authorization": `Bearer ${user.user.token}`
+                        "Authorization": `Bearer ${user.token}`
                     }
                 });
 
                 if (!response.ok) throw new Error("Failed to fetch form data");
 
+                
+                // ─────────────────────────────────────────────────────────────────────────
+    			// Temporary debug check.
+    			// ─────────────────────────────────────────────────────────────────────────
+                
+                console.log("Fetching:", `${API_BASE}/api/form/`);
+				console.log("Response status:", response.status);
+				console.log("Response content-type:", response.headers.get("content-type"));
+				const text = await response.text();
+				console.log("Raw response:", text.slice(0, 300));
+                
+                
+                // ─────────────────────────────────────────────────────────────────────────
+    			// End of temporary debug check.
+    			// ─────────────────────────────────────────────────────────────────────────
+                
                 const form = await response.json();
                 
                 setResponses(form.responses);
@@ -810,10 +826,10 @@ const Results = () => {
         };
 
         fetchResponses();
-    }, [user?.user?.token]);
+    }, [user?.token]);
     
     useEffect(() => {
-        if (!user?.user?.token || !hasLoadedAlt) return;
+        if (!user?.token || !hasLoadedAlt) return;
 
         const timeoutId = setTimeout(async () => {
             setIsAutosavingAlt(true);
@@ -823,7 +839,7 @@ const Results = () => {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${user.user.token}`
+                "Authorization": `Bearer ${user.token}`
             },
             body: JSON.stringify({
                 alternateRealities: {
@@ -861,11 +877,11 @@ const Results = () => {
         altCareer2,
         altSteps2,
         hasLoadedAlt,
-        user?.user?.token,
+        user?.token,
     ]);
 
 	useEffect(() => {
-    	if (!user?.user?.token || !hasLoadedCareerAdvancement) return;
+    	if (!user?.token || !hasLoadedCareerAdvancement) return;
 
     	const timeoutId = setTimeout(async () => {
         	setIsAutosavingCareerAdvancement(true);
@@ -875,7 +891,7 @@ const Results = () => {
                 	method: "PATCH",
                 	headers: {
                     	"Content-Type": "application/json",
-                   		"Authorization": `Bearer ${user.user.token}`
+                   		"Authorization": `Bearer ${user.token}`
                 },
                 	body: JSON.stringify({
                     	careerAdvancementSmartGoals: {
@@ -903,11 +919,11 @@ const Results = () => {
     	careerAdvancementOther,
     	careerAdvancementSmartRows,
     	hasLoadedCareerAdvancement,
-    	user?.user?.token,
+    	user?.token,
 	]);
 	
 	useEffect(() => {
-    	if (!user?.user?.token || !hasLoadedSkillBuilding) return;
+    	if (!user?.token || !hasLoadedSkillBuilding) return;
 
     	const timeoutId = setTimeout(async () => {
         	setIsAutosavingSkillBuilding(true);
@@ -917,7 +933,7 @@ const Results = () => {
                 	method: "PATCH",
                 	headers: {
                     	"Content-Type": "application/json",
-                    	"Authorization": `Bearer ${user.user.token}`
+                    	"Authorization": `Bearer ${user.token}`
                 	},
                 	body: JSON.stringify({
                     	skillBuildingSmartGoals: {
@@ -943,11 +959,11 @@ const Results = () => {
     	skillBuildingSelections,
     	skillBuildingSmartRows,
     	hasLoadedSkillBuilding,
-    	user?.user?.token,
+    	user?.token,
 	]);
 	
 		useEffect(() => {
-    	if (!user?.user?.token || !hasLoadedCurrentProgram) return;
+    	if (!user?.token || !hasLoadedCurrentProgram) return;
 
     	const timeoutId = setTimeout(async () => {
         	setIsAutosavingCurrentProgram(true);
@@ -957,7 +973,7 @@ const Results = () => {
                 	method: "PATCH",
                 	headers: {
                     	"Content-Type": "application/json",
-                    	"Authorization": `Bearer ${user.user.token}`
+                    	"Authorization": `Bearer ${user.token}`
                 	},
                 	body: JSON.stringify({
                     	currentProgramSmartGoals: {
@@ -985,11 +1001,11 @@ const Results = () => {
     	currentProgramOther,
     	currentProgramSmartRows,
     	hasLoadedCurrentProgram,
-    	user?.user?.token,
+    	user?.token,
 	]);
 	
 		useEffect(() => {
-    	if (!user?.user?.token || !hasLoadedMentors) return;
+    	if (!user?.token || !hasLoadedMentors) return;
 
     	const timeoutId = setTimeout(async () => {
         	setIsAutosavingMentors(true);
@@ -999,7 +1015,7 @@ const Results = () => {
                 	method: "PATCH",
                 	headers: {
                     	"Content-Type": "application/json",
-                    	"Authorization": `Bearer ${user.user.token}`
+                    	"Authorization": `Bearer ${user.token}`
                 	},
                 	body: JSON.stringify({
                     	findMentors: {
@@ -1023,10 +1039,10 @@ const Results = () => {
 	}, [
     	mentorRows,
     	hasLoadedMentors,
-    	user?.user?.token,
+    	user?.token,
 	]);
 
-    if (!user || !user.user) return <div>Loading...</div>;
+    if (!user || !user) return <div>Loading...</div>;
 
     return (
         <div className="ResultsPage">
@@ -1034,7 +1050,7 @@ const Results = () => {
                 <img src={image} alt="GenomeIDP Logo" />
 
                 <span className="ResultsWelcome">
-                    Welcome {user.user.username} to your GenomeIDP!
+                    Welcome {user.username} to your GenomeIDP!
                 </span>
 
                 <div className="results-nav-right">
