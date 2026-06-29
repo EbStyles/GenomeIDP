@@ -78,6 +78,7 @@ const CAREER_VALUES_QUESTIONS = [
     "High demand",
 ];
 
+const API_BASE = process.env.REACT_APP_API_URL || "";
 const Results = () => {
     const location = useLocation();
     const history = useHistory();
