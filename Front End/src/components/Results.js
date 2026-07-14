@@ -10,8 +10,6 @@ import ViewReport from "./ViewReport";
 import ViewCertificate from "./ViewCertificate";
 import MyNotes from "./MyNotes";
 
-console.error("RESULTS JS LOADED");
-
 // ─────────────────────────────────────────────────────────────────────────────
 // Results
 // Displays the career match results and values summary after survey submission.
@@ -791,9 +789,10 @@ const Results = () => {
                     const derived = [];
                     const answersObj = valuesSection.answers;
 
-                    console.log("valuesSection", valuesSection);
-    				console.log("CAREER_VALUES_QUESTIONS", CAREER_VALUES_QUESTIONS);
-    				console.log("Indices 31-35", {
+                    console.error("valuesSection", valuesSection);
+                    console.error("derived topValues FINAL", derived);
+    				console.error("CAREER_VALUES_QUESTIONS", CAREER_VALUES_QUESTIONS);
+    				console.error("Indices 31-35", {
         				31: CAREER_VALUES_QUESTIONS[31],
         				32: CAREER_VALUES_QUESTIONS[32],
         				33: CAREER_VALUES_QUESTIONS[33],
