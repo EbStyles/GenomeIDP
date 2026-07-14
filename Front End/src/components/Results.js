@@ -720,13 +720,9 @@ const Results = () => {
     //  5. Also store the full responses array for use elsewhere.
     // ─────────────────────────────────────────────────────────────────────────
     
-    console.error("RESULTS RENDER FULL USER", user);
-    console.error("RESULTS USER KEYS", user ? Object.keys(user) : null);
     
     useEffect(() => {
-    
-    console.error("USEEFFECT FIRED", { token: user?.token });
-    
+        
     const fetchResponses = async () => {
         console.error("FETCHRESPONSES ENTERED", { token: user?.token });
         
@@ -1495,7 +1491,7 @@ const Results = () => {
 <p style={{ lineHeight: "1.6", marginBottom: "1.5rem" }}>
     Looking for a lot more information?{" "}
     <a
-        href="https://www.livecareer.com/resources/interviews/prep/informational-interviewing"
+        href="https://www.livecareer.co.uk/career-advice/informational-interview-questions"
         target="_blank"
         rel="noopener noreferrer"
     >
