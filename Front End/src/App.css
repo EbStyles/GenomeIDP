@@ -2128,7 +2128,7 @@ h1 {
     font-size: 1rem;
   }
 
-  /* Homepage hero */
+  /* Homepage Landing Section */
   .Section1 {
     width: 100%;
     max-width: 100%;
@@ -2155,6 +2155,14 @@ h1 {
     line-height: 1.5;
     word-spacing: normal;
     padding-bottom: 1.5rem;
+  }
+}
+
+/* Homepage Explore Your Career Options */
+@media (max-width: 768px) {
+  .Section2 img {
+    width: 90px;
+    height: auto;
   }
 }
 
