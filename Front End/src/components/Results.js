@@ -1052,7 +1052,7 @@ const Results = () => {
     	user?.token,
 	]);
 
-    if (!user || !user) return <div>Loading...</div>;
+    if (!user) return <div>Loading...</div>;
 
     return (
         <div className="ResultsPage">
@@ -2902,7 +2902,6 @@ const Results = () => {
 {activeView === "notes" && <MyNotes notes={notes} setNotes={setNotes} />}
                         </div>
                     </div>
-                )}
             </div>
         </div>
     );
