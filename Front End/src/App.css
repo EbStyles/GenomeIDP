@@ -2574,6 +2574,39 @@ h1 {
     padding: 1rem;
     box-sizing: border-box;
   }
+  
+  .ResultsNav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+}
+
+.ResultsWelcome {
+  flex: 1 1 100%;
+  min-width: 0;
+  font-size: clamp(1.8rem, 7vw, 2.8rem);
+  line-height: 1.05;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.results-nav-right {
+  width: 100%;
+  min-width: 0;
+}
+
+.ResultsNav img {
+  width: 56px;
+  height: auto;
+  flex: 0 0 auto;
+}
 
   .ResultsCard {
     width: 100%;
