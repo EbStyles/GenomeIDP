@@ -2585,11 +2585,13 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    margin-bottom: 0.75rem;
+    height: auto;
+    min-height: unset;
+    overflow: visible;
+    margin: 0;
     padding: 0.75rem 1rem 1rem;
     box-sizing: border-box;
   }
@@ -2605,16 +2607,18 @@ h1 {
     min-width: 0;
     font-size: clamp(1.3rem, 6vw, 2rem);
     line-height: 1.1;
+    margin: 0 0 0.5rem 0;
     white-space: normal;
     overflow-wrap: anywhere;
     word-break: break-word;
-    margin: 0;
+    
   }
 
   .results-nav-right {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 0.75rem;
   }
 
   .results-nav-right .save-exit-link {
