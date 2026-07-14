@@ -2370,6 +2370,11 @@ h1 {
 }
 
 /* Survey Form & Sidenav */
+ 
+  html, body {
+    overflow-x: hidden;
+  }
+
 @media (max-width: 768px) {
   .FormPageContainer {
     display: flex;
