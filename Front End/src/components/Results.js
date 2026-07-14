@@ -725,6 +725,9 @@ const Results = () => {
             if (!user?.token) return;
 
             try {
+                
+                console.error("fetchResponses started", { hasToken: !!user?.token });
+                
                 const response = await fetch(`${API_BASE}/api/form/`, {
                     method: "GET",
                     headers: {
@@ -735,7 +738,13 @@ const Results = () => {
 
                 if (!response.ok) throw new Error("Failed to fetch form data");
                 
+                
+                console.error("form fetch response", { ok: response.ok, status: response.status });
+                
                 const form = await response.json();
+                
+                console.error("form payload", form);
+				console.error("form.responses", form.responses);
                 
                 setResponses(form.responses);
                 
@@ -785,11 +794,12 @@ const Results = () => {
                     (s) => s.section === "Career Values"
                 );
 
+				console.error("valuesSection", valuesSection);
+
                 if (valuesSection?.answers) {
                     const derived = [];
                     const answersObj = valuesSection.answers;
 
-                    console.error("valuesSection", valuesSection);
                     console.error("derived topValues FINAL", derived);
     				console.error("CAREER_VALUES_QUESTIONS", CAREER_VALUES_QUESTIONS);
     				console.error("Indices 31-35", {
