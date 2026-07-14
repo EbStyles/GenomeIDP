@@ -10,6 +10,8 @@ import ViewReport from "./ViewReport";
 import ViewCertificate from "./ViewCertificate";
 import MyNotes from "./MyNotes";
 
+console.error("RESULTS JS LOADED");
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Results
 // Displays the career match results and values summary after survey submission.
@@ -721,12 +723,20 @@ const Results = () => {
     // ─────────────────────────────────────────────────────────────────────────
     
     useEffect(() => {
+    
+    console.error("USEEFFECT FIRED", { token: user?.token });
+    const fetchResponses = async () => {
+        console.error("FETCHRESPONSES ENTERED", { token: user?.token });
+        if (!user?.token) {
+            console.error("NO TOKEN, RETURNING");
+            return;
+        }
+    
         const fetchResponses = async () => {
             if (!user?.token) return;
 
             try {
                 
-                console.error("fetchResponses started", { hasToken: !!user?.token });
                 
                 const response = await fetch(`${API_BASE}/api/form/`, {
                     method: "GET",
@@ -737,10 +747,7 @@ const Results = () => {
                 });
 
                 if (!response.ok) throw new Error("Failed to fetch form data");
-                
-                
-                console.error("form fetch response", { ok: response.ok, status: response.status });
-                
+                                
                 const form = await response.json();
                 
                 console.error("form payload", form);
@@ -793,8 +800,6 @@ const Results = () => {
                 const valuesSection = form.responses?.find(
                     (s) => s.section === "Career Values"
                 );
-
-				console.error("valuesSection", valuesSection);
 
                 if (valuesSection?.answers) {
                     const derived = [];
