@@ -725,19 +725,16 @@ const Results = () => {
     useEffect(() => {
     
     console.error("USEEFFECT FIRED", { token: user?.token });
+    
     const fetchResponses = async () => {
         console.error("FETCHRESPONSES ENTERED", { token: user?.token });
+        
         if (!user?.token) {
             console.error("NO TOKEN, RETURNING");
             return;
         }
-    
-        const fetchResponses = async () => {
-            if (!user?.token) return;
 
             try {
-                
-                
                 const response = await fetch(`${API_BASE}/api/form/`, {
                     method: "GET",
                     headers: {
@@ -745,6 +742,8 @@ const Results = () => {
                         "Authorization": `Bearer ${user.token}`
                     }
                 });
+
+				console.error("form fetch response", { ok: response.ok, status: response.status });
 
                 if (!response.ok) throw new Error("Failed to fetch form data");
                                 
@@ -801,11 +800,12 @@ const Results = () => {
                     (s) => s.section === "Career Values"
                 );
 
+				console.error("valuesSection", valuesSection);
+
                 if (valuesSection?.answers) {
                     const derived = [];
                     const answersObj = valuesSection.answers;
 
-                    console.error("derived topValues FINAL", derived);
     				console.error("CAREER_VALUES_QUESTIONS", CAREER_VALUES_QUESTIONS);
     				console.error("Indices 31-35", {
         				31: CAREER_VALUES_QUESTIONS[31],
@@ -820,7 +820,7 @@ const Results = () => {
                         const numericScore = Number(score);
                         const valueName = CAREER_VALUES_QUESTIONS[idx];
 
-                        console.log("Career Value debug:", { indexStr, idx, numericScore, valueName });
+                        console.error("Career Value debug:", { indexStr, idx, numericScore, valueName });
                         
                         if (numericScore === 5 && valueName) {
                             derived.push({
@@ -830,7 +830,7 @@ const Results = () => {
                         }
                     }
 
-                    console.log("derived topValues FINAL", derived);
+                    console.error("derived topValues FINAL", derived);
                     setTopValues(derived);
                 }
             } catch (err) {
