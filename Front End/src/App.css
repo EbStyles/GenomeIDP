@@ -2139,7 +2139,7 @@ h1 {
   }
 
   .subheading {
-  	font-size: clamp(18px, 8vw, 42px);
+  	font-size: clamp(16px, 7vw, 42px);
   	max-width: 100%;
   	text-align: left;
   	line-height: 1.02;
