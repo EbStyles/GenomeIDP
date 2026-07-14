@@ -2472,8 +2472,8 @@ h1 {
   }
 
   .questions label {
-    font-size: 1.1rem;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1.35;
     text-align: center;
     padding-bottom: 1rem;
   }
@@ -2512,7 +2512,7 @@ h1 {
   .answers span {
     width: auto;
     flex: 1;
-    font-size: 0.85rem;
+    font-size: 0.72rem;
     text-align: center;
   }
 
