@@ -2229,6 +2229,8 @@ h1 {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
     text-align: left;
   }
 
@@ -2236,13 +2238,15 @@ h1 {
     font-size: 1rem;
     letter-spacing: 0.08em;
     margin-bottom: 12px;
-    padding-left: 0;
   }
 
   .Section4 h2 {
+    display: block;
     font-size: clamp(32px, 10vw, 52px);
     line-height: 1.08;
+    margin-top: 0;
     margin-bottom: 24px;
+    transform: none;
   }
 
   .Section4 p {
@@ -2252,7 +2256,6 @@ h1 {
     margin-bottom: 0;
   }
 }
-
 
 @media (max-width: 768px) {
   .CareerResourcesPage {
