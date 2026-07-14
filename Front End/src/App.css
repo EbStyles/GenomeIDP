@@ -2386,6 +2386,35 @@ h1 {
     padding: 1rem;
   }
 
+  .FormPage,
+  .FormPageContainer,
+  .Form,
+  .FormNav,
+  .questions,
+  .question,
+  .answers {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .FormNav {
+    overflow-wrap: anywhere;
+  }
+
+  .FormNav * {
+    min-width: 0;
+  }
+
+  .questions label,
+  .q_header,
+  .q_index,
+  .answers span {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
   .sidenav {
     order: 2;
     position: static;
