@@ -2535,6 +2535,56 @@ h1 {
   }
 }
 
+/* Results Pages */
+@media (max-width: 768px) {
+  .ResultsLayout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Rsidenav {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 220px;
+    overflow-y: auto;
+    border-right: none;
+    border-bottom: 1px solid #d6e4ea;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .Rsidenav h1,
+  .Rsidenav h2,
+  .Rsidenav h3,
+  .Rsidenav a,
+  .Rsidenav li {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .ResultsMain {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .ResultsCard {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 1.25rem;
+    box-sizing: border-box;
+  }
+}
+
 /* Career Resources */
 @media (max-width: 768px) {
   .CareerResourcesPage {
