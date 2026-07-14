@@ -2204,6 +2204,8 @@ h1 {
   .Midpart .item p {
     font-size: 1.05rem;
     line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .Midpart .dot {
