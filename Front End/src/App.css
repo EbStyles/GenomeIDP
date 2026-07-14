@@ -2512,7 +2512,7 @@ h1 {
   .answers span {
     width: auto;
     flex: 1;
-    font-size: 0.6rem;
+    font-size: clamp(0.6rem, 2.2vw, 0.78rem);
     text-align: center;
   }
 
