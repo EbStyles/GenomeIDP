@@ -2537,24 +2537,26 @@ h1 {
 
 /* Results Pages */
 @media (max-width: 768px) {
+  .ResultsPageContainer,
   .ResultsLayout {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: stretch;
   }
 
   .Rsidenav {
     position: static;
     width: 100%;
     max-width: 100%;
+    min-width: 0;
     height: auto;
-    max-height: 220px;
-    overflow-y: auto;
+    max-height: none;
+    overflow: visible;
     border-right: none;
     border-bottom: 1px solid #d6e4ea;
     box-sizing: border-box;
-    font-size: 0.95rem;
-    padding: 0.75rem 1rem;
+    margin: 0;
   }
   
   .Rsidenav h1,
@@ -2625,8 +2627,8 @@ h1 {
     max-width: 100%;
     min-width: 0;
     margin: 0;
-    padding: 1.25rem;
     box-sizing: border-box;
+    clear: both;
   }
 }
 
