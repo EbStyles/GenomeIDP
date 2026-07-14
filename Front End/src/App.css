@@ -2222,38 +2222,31 @@ h1 {
     box-sizing: border-box;
   }
 
-  .Section4 h4,
-  .Section4 h2,
-  .Section4 p {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: left;
-  }
-
   .Section4 h4 {
+    padding-left: 0;
+    margin: 0 0 12px 0;
+    text-align: left;
     font-size: 1rem;
     letter-spacing: 0.08em;
-    margin-bottom: 12px;
   }
 
   .Section4 h2 {
-    display: block;
+    padding-left: 0;
+    margin: 0 0 24px 0;
+    max-width: 100%;
+    text-align: left;
     font-size: clamp(32px, 10vw, 52px);
     line-height: 1.08;
-    margin-top: 0;
-    margin-bottom: 24px;
-    transform: none;
   }
 
   .Section4 p {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
     font-size: 1rem;
     line-height: 1.7;
-    margin-top: 0;
-    margin-bottom: 0;
+    text-align: left;
+    padding-bottom: 0;
   }
 }
 
