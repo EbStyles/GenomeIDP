@@ -720,7 +720,8 @@ const Results = () => {
     //  5. Also store the full responses array for use elsewhere.
     // ─────────────────────────────────────────────────────────────────────────
     
-    console.error("RESULTS RENDER", { user, token: user?.token });
+    console.error("RESULTS RENDER FULL USER", user);
+    console.error("RESULTS USER KEYS", user ? Object.keys(user) : null);
     
     useEffect(() => {
     
