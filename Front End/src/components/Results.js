@@ -790,7 +790,14 @@ const Results = () => {
                     const answersObj = valuesSection.answers;
 
                     console.log("valuesSection", valuesSection);
-					console.log("derived topValues", derived);
+    				console.log("CAREER_VALUES_QUESTIONS", CAREER_VALUES_QUESTIONS);
+    				console.log("Indices 31-35", {
+        				31: CAREER_VALUES_QUESTIONS[31],
+        				32: CAREER_VALUES_QUESTIONS[32],
+        				33: CAREER_VALUES_QUESTIONS[33],
+        				34: CAREER_VALUES_QUESTIONS[34],
+        				35: CAREER_VALUES_QUESTIONS[35],
+        			});
                     
                     for (const [indexStr, score] of Object.entries(answersObj)) {
                         const idx = Number(indexStr);
