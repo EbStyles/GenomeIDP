@@ -2166,6 +2166,51 @@ h1 {
   }
 }
 
+/* Homepage By The Numbers */
+@media (max-width: 768px) {
+  .Section3 {
+    padding: 48px 20px;
+    box-sizing: border-box;
+  }
+
+  .Section3heading h1 {
+    font-size: clamp(32px, 9vw, 52px);
+    text-align: center;
+    line-height: 1.15;
+    margin-bottom: 32px;
+  }
+
+  .Midpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .Midpart .item {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .Midpart .item h2 {
+    font-size: clamp(48px, 14vw, 72px);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .Midpart .item p {
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+  .Midpart .dot {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .CareerResourcesPage {
     padding: 1rem;
