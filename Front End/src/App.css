@@ -2213,6 +2213,40 @@ h1 {
   }
 }
 
+/* Homepage About Us */
+@media (max-width: 768px) {
+  .Section4 {
+    width: 100%;
+    max-width: 100%;
+    padding: 48px 20px;
+    box-sizing: border-box;
+  }
+
+  .Section4 h4 {
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .Section4 h2 {
+    font-size: clamp(32px, 10vw, 52px);
+    line-height: 1.08;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .Section4 p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+
 @media (max-width: 768px) {
   .CareerResourcesPage {
     padding: 1rem;
