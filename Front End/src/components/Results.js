@@ -83,7 +83,7 @@ const API_BASE = process.env.REACT_APP_API_URL || "";
 const Results = () => {
     const location = useLocation();
     const history = useHistory();
-    const user = useAuthContext();
+    const { user } = useAuthContext();
     const [matches, setMatches] = useState([]);
     const [page, setPage] = useState(1);
     const [activeView, setActiveView] = useState("intro");
