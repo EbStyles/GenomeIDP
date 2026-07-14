@@ -2543,36 +2543,85 @@ h1 {
     flex-direction: column;
     width: 100%;
     max-width: 100%;
+    min-width: 0;
     align-items: stretch;
     box-sizing: border-box;
   }
 
   .Rsidenav {
+    order: 2;
     position: static;
+    top: auto;
+    left: auto;
     width: 100%;
     max-width: 100%;
     min-width: 0;
     height: auto;
-    max-height: none;
-    overflow: visible;
+    max-height: 220px;
+    overflow-y: auto;
+    overflow-x: hidden;
     border-right: none;
     border-bottom: 1px solid #d6e4ea;
-    box-sizing: border-box;
     margin: 0;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
   }
 
+  .Rsidenav .navlist,
+  .Rsidenav .subsection-list {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .Rsidenav * {
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .Rsidenav .section-title,
+  .Rsidenav .subsection-item,
   .Rsidenav h1,
   .Rsidenav h2,
   .Rsidenav h3,
   .Rsidenav a,
-  .Rsidenav li {
+  .Rsidenav li,
+  .Rsidenav button {
+    width: 100%;
     max-width: 100%;
+    white-space: normal;
     overflow-wrap: anywhere;
     word-break: break-word;
   }
 
+  .Rsidenav .section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    text-align: left;
+    padding: 0.75rem 1rem;
+  }
+
+  .Rsidenav .subsection-item {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.35;
+    text-align: left;
+    padding: 0.65rem 1rem 0.65rem 1.5rem;
+  }
+
+  .Rsidenav .section-icon {
+    flex: 0 0 auto;
+  }
+
   .ResultsMain {
+    order: 1;
     width: 100%;
     max-width: 100%;
     min-width: 0;
@@ -2604,14 +2653,14 @@ h1 {
 
   .ResultsWelcome {
     width: 100%;
+    max-width: 100%;
     min-width: 0;
+    margin: 0 0 0.5rem 0;
     font-size: clamp(1.3rem, 6vw, 2rem);
     line-height: 1.1;
-    margin: 0 0 0.5rem 0;
     white-space: normal;
     overflow-wrap: anywhere;
     word-break: break-word;
-    
   }
 
   .results-nav-right {
@@ -2631,8 +2680,8 @@ h1 {
     max-width: 100%;
     min-width: 0;
     margin: 0;
-    box-sizing: border-box;
     clear: both;
+    box-sizing: border-box;
   }
 }
 
