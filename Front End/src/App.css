@@ -2250,6 +2250,46 @@ h1 {
   }
 }
 
+/* Get Started Why An IDP */
+@media (max-width: 768px) {
+  .P2Section2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .P2Section2 div {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 20px 24px;
+    box-sizing: border-box;
+  }
+
+  .P2Section2 h1 {
+    max-width: 100%;
+    font-size: clamp(32px, 12vw, 56px);
+    line-height: 1.05;
+    margin: 0 0 20px 0;
+    text-align: left;
+  }
+
+  .P2Section2 p {
+    margin: 0;
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .P2Section2 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   .CareerResourcesPage {
     padding: 1rem;
