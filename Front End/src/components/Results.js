@@ -10,8 +10,6 @@ import ViewReport from "./ViewReport";
 import ViewCertificate from "./ViewCertificate";
 import MyNotes from "./MyNotes";
 
-console.error("RESULTS JS LOADED");
-
 // ─────────────────────────────────────────────────────────────────────────────
 // Results
 // Displays the career match results and values summary after survey submission.
@@ -721,6 +719,8 @@ const Results = () => {
     //  4. If the numeric score is 5, push { name, prompt } to topValues.
     //  5. Also store the full responses array for use elsewhere.
     // ─────────────────────────────────────────────────────────────────────────
+    
+    console.error("RESULTS RENDER", { user, token: user?.token });
     
     useEffect(() => {
     
