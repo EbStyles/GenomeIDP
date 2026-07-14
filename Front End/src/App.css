@@ -2542,7 +2542,9 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 100%;
     align-items: stretch;
+    box-sizing: border-box;
   }
 
   .Rsidenav {
@@ -2557,8 +2559,9 @@ h1 {
     border-bottom: 1px solid #d6e4ea;
     box-sizing: border-box;
     margin: 0;
+    padding: 0.75rem 1rem;
   }
-  
+
   .Rsidenav h1,
   .Rsidenav h2,
   .Rsidenav h3,
@@ -2566,63 +2569,60 @@ h1 {
   .Rsidenav li {
     max-width: 100%;
     overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .ResultsMain {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    margin-left: 0;
+    margin: 0;
     padding: 1rem;
     box-sizing: border-box;
   }
-  
+
   .ResultsNav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  margin-bottom: 0.5rem;
-  padding: 0.75rem 1rem 1rem;
-  box-sizing: border-box;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem 1rem;
+    box-sizing: border-box;
+  }
 
-.ResultsNav img {
-  width: 56px;
-  height: auto;
-}
+  .ResultsNav img {
+    width: 56px;
+    height: auto;
+    flex: 0 0 auto;
+  }
 
-.ResultsWelcome {
-  width: 100%;
-  min-width: 0;
-  font-size: clamp(1.3rem, 6vw, 2rem);
-  line-height: 1.1;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-break: break-word;
-  margin: 0;
-}
+  .ResultsWelcome {
+    width: 100%;
+    min-width: 0;
+    font-size: clamp(1.3rem, 6vw, 2rem);
+    line-height: 1.1;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    margin: 0;
+  }
 
-.results-nav-right {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
+  .results-nav-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
 
-.results-nav-right .save-exit-link {
-  font-size: 1rem;
-}
+  .results-nav-right .save-exit-link {
+    font-size: 1rem;
+  }
 
-.ResultsNav img {
-  width: 56px;
-  height: auto;
-  flex: 0 0 auto;
-}
-
-  .ResultsCard {
+  .ResultsCard,
+  .results-content {
     width: 100%;
     max-width: 100%;
     min-width: 0;
