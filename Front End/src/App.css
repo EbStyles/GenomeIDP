@@ -2135,16 +2135,19 @@ h1 {
     padding: 40px 20px 56px;
     box-sizing: border-box;
     text-align: left;
+    overflow-x: hidden;
   }
 
   .subheading {
-    font-size: clamp(40px, 12vw, 64px);
-    max-width: 100%;
-    text-align: left;
-    line-height: 1.05;
-    padding-bottom: 12px;
-  }
-
+  	font-size: clamp(28px, 10vw, 52px);
+  	max-width: 100%;
+  	text-align: left;
+  	line-height: 1.02;
+  	padding-bottom: 12px;
+  	overflow-wrap: break-word;
+  	word-break: break-word;
+	}
+	
   .subfont {
     max-width: 100%;
     font-size: clamp(18px, 5vw, 24px);
