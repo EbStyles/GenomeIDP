@@ -2522,7 +2522,6 @@ h1 {
     text-align: center;
   }
   
-  @media (max-width: 768px) {
   .formButtons button {
     font-size: 1.1rem;
     min-width: 0;
