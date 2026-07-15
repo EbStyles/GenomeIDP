@@ -2794,6 +2794,43 @@ h1 {
   }
 }
 
+/* View Report */
+@media (max-width: 768px) {
+  .report-export-root {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .report-section-box {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 1rem !important;
+    overflow-x: auto;
+  }
+
+  .report-section-box table {
+    width: 100% !important;
+    max-width: 100%;
+    font-size: 0.9rem !important;
+    table-layout: auto !important;
+    border-collapse: collapse;
+  }
+
+  .report-section-box th,
+  .report-section-box td {
+    padding: 0.5rem 0.4rem !important;
+    white-space: normal !important;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    vertical-align: top;
+  }
+}
+
 /* ==========================================================================
    Notes from prior additive patches
    ========================================================================== */
