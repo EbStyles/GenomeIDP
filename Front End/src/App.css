@@ -2796,7 +2796,14 @@ h1 {
 
 /* Prepare Report */
 @media (max-width: 768px) {
+  .PrepareReportNameField {
+    margin-left: 0 !important;
+    max-width: 100%;
+    min-width: 0;
+  }
+
   .PrepareReportNameInput {
+    width: 100%;
     max-width: 100%;
     box-sizing: border-box;
   }
