@@ -38,6 +38,8 @@ const Section6 = forwardRef((props,ref) => {
       			<p>
         			© {new Date().getFullYear()} GenomeIDP ·{" "}
         			<Link to="/privacy">Privacy Policy</Link>
+        			·{" "}
+    				<Link to="/terms">Terms of Use</Link>
       			</p>
     		</div>
             
