@@ -11,7 +11,14 @@ const mongoose = require("mongoose")
 const app = express()
 
 // Middleware that runs every time a request comes in
-app.use(cors())
+app.use(cors({
+  origin: [
+    'https://genomeidp.ca',
+    'https://www.genomeidp.ca',
+    'https://genomeidp-front-end.onrender.com' // keep until fully transitioned
+  ],
+  credentials: true
+}))
 app.use(express.json())
 
 // Log information about the request
