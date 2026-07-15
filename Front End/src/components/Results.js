@@ -2435,6 +2435,7 @@ const Results = () => {
 
                 <textarea
                     id="current-program-other"
+                    className="SMARTOtherTextarea"
                     value={currentProgramOther}
                     onChange={(e) => setCurrentProgramOther(e.target.value)}
                     rows={4}
