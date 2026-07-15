@@ -1943,7 +1943,7 @@ const Results = () => {
 
         <textarea
             id="career-advancement-other"
-            className="CareerAdvancementOtherTextarea"
+            className="SMARTOtherTextarea"
             value={careerAdvancementOther}
             onChange={(e) => setCareerAdvancementOther(e.target.value)}
             rows={4}
