@@ -2753,6 +2753,21 @@ h1 {
   }
 }
 
+/* Values Table */
+@media (max-width: 768px) {
+  .ValuesTable th,
+  .ValuesTable td {
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .ValuesTable td:first-child,
+  .ValuesTable th:first-child {
+    min-width: 160px;
+    white-space: normal;
+  }
+}
+
 
 /* ==========================================================================
    Notes from prior additive patches
