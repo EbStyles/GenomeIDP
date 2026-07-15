@@ -1,6 +1,7 @@
 import { useParams, useLocation, useHistory } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useAuthContext } from "../hooks/useAuthContext";
+import API_BASE_URL from '../config';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // CareerDetails
@@ -112,7 +113,7 @@ const CareerDetails = () => {
         const fetchUserAnswers = async () => {
             if (!user?.user?.token) return;
             try {
-                const response = await fetch('https://genomeidp-back-end-tis4.onrender.com/api/form/', {
+                const response = await fetch(`${API_BASE_URL}/api/form/`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useAuthContext } from "../hooks/useAuthContext";
+import API_BASE_URL from '../config';
 
 const QUICK_TAGS = ["Career Matches", "Values", "Resources", "Planning", "Networking", "Informational Interviews"];
 
@@ -15,7 +16,7 @@ const MyNotesPage = ({ notes, setNotes }) => {
       if (!user?.token) return;
 
       try {
-        const response = await fetch("https://genomeidp-back-end-tis4.onrender.com/api/notes", {
+        const response = await fetch(`${API_BASE_URL}/api/notes`, {
           headers: {
             "Authorization": `Bearer ${user.token}`,
           },
@@ -58,7 +59,7 @@ const MyNotesPage = ({ notes, setNotes }) => {
 
     saveTimeoutRef.current = setTimeout(async () => {
       try {
-        const response = await fetch("https://genomeidp-back-end-tis4.onrender.com/api/notes", {
+        const response = await fetch(`${API_BASE_URL}/api/notes`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",

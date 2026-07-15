@@ -1,35 +1,34 @@
-import { useEffect,useState } from "react";
-
+import { useEffect, useState } from "react";
+import API_BASE_URL from '../config';
 
 const Dev = () => {
 
-const [users,setUsers] = useState(null)
+  const [users, setUsers] = useState(null)
 
-useEffect(() => {
+  useEffect(() => {
     const fetchUsers = async() => {
-         const response = await fetch("https://genomeidp-back-end-tis4.onrender.com/api/auth")
-         const json = await response.json()
+      const response = await fetch(`${API_BASE_URL}/api/auth`)
+      const json = await response.json()
 
-         console.log(json)
+      console.log(json)
 
-         if (response.ok) {
-            setUsers(json)
-            console.log(json)
-         }
+      if (response.ok) {
+        setUsers(json)
+        console.log(json)
+      }
     }
 
     fetchUsers()
-},[])
+  }, [])
 
-    return (
-
-        <div className = "dev">
-            <h1>HELLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO developers!!!</h1>
-            {users && users.map((user) => (
-            <h1 id = {user._id}>{user.username}</h1>
-            ))}
-        </div>
-      );
+  return (
+    <div className="dev">
+      <h1>HELLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO developers!!!</h1>
+      {users && users.map((user) => (
+        <h1 id={user._id}>{user.username}</h1>
+      ))}
+    </div>
+  );
 }
- 
-export default Dev ;
+
+export default Dev;

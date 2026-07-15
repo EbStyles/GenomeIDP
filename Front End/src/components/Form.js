@@ -4,6 +4,7 @@ import SideNav from "./Formsidenav";
 import questions from "../data/questions.json";
 import image from "../GenomeIDP_Logo.png";
 import { useAuthContext } from "../hooks/useAuthContext";
+import API_BASE_URL from '../config';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Form
@@ -109,7 +110,7 @@ const Form = () => {
     useEffect(() => {
         const fetchSavedAnswers = async () => {
             try {
-                const response = await fetch('https://genomeidp-back-end-tis4.onrender.com/api/form/', {
+                const response = await fetch(`${API_BASE_URL}/api/form/`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -355,7 +356,7 @@ const Form = () => {
             setSurveyComplete(true);
             // ─────────────────────────────────────────────────────────────────
 
-            const matchResponse = await fetch('https://genomeidp-back-end-tis4.onrender.com/api/match/', {
+            const matchResponse = await fetch(`${API_BASE_URL}/api/match/`, {
                 method: 'GET',
                 headers: { 'Authorization': `Bearer ${user.user.token}` }
             });
@@ -473,7 +474,7 @@ const Form = () => {
         };
 
         try {
-            const response = await fetch('https://genomeidp-back-end-tis4.onrender.com/api/form/', {
+            const response = await fetch(`${API_BASE_URL}/api/form/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

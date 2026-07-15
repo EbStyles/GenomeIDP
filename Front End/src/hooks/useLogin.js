@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
+import API_BASE_URL from '../config';
 
 export const useLogin = () => {
 
@@ -11,7 +12,7 @@ export const useLogin = () => {
         setError(null)
         setIsLoading(true)
 
-        const response = await fetch('https://genomeidp-back-end-tis4.onrender.com/api/auth/login', {
+        const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({username,password})   
