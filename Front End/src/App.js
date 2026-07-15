@@ -19,6 +19,7 @@ import { useAuthContext } from './hooks/useAuthContext';
 import CareerDetails from './components/careers';
 import AdminPage from './components/admin';
 import CareerResourcesPage from './components/CareerResourcesPage';
+import Privacy from './components/Privacy';
 
 // Inner component — useHistory must be called inside the Router, not alongside it
 function AppInner() {
@@ -97,6 +98,7 @@ function AppInner() {
         <Route path="/career/:careerName"><CareerDetails /></Route>
         <Route path="/admin"><AdminPage /></Route>
         <Route path="/resources/:careerName" component={CareerResourcesPage} />
+        <Route path="/privacy"><Privacy /></Route>
       </Switch>
     </div>
   );
