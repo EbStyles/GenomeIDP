@@ -2830,13 +2830,13 @@ h1 {
     vertical-align: top;
   }
 
-  .report-section-box th:last-child,
-  .report-section-box td:last-child {
+  .report-summary-table th:last-child,
+  .report-summary-table td:last-child {
     width: 6rem;
     min-width: 6rem;
   }
 
-  .report-section-box th:last-child {
+  .report-summary-table th:last-child {
     white-space: nowrap !important;
   }
 }
