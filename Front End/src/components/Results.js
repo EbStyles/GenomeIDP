@@ -1076,7 +1076,7 @@ const Results = () => {
 
             <div className="ResultsMain">
 
-                    <div style={{ display: "flex", width: "100%", alignItems: "stretch" }}>
+                    <div className="ResultsContentRow">
                         <div className="ResultsSidenav">
                             <RSidenav activeView={activeView} onViewChange={setActiveView} />
                         </div>
