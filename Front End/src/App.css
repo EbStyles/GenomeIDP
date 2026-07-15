@@ -2726,28 +2726,30 @@ h1 {
 
   .CareerResourcesCard {
     padding: 1.5rem;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .CareerResourcesBlurb {
+    min-width: 0;
+    max-width: 100%;
   }
 
   .CareerResourcesBlurb p {
     text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    line-height: 1.6;
+  }
+
+  .CareerResourcesBlurb strong {
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .CareerResourceBlock {
     padding: 1.25rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .ValuesTable th,
-  .ValuesTable td {
-    padding: 0.9rem 1rem;
-    font-size: 0.95rem;
-  }
-
-  .ValuesTable td:first-child,
-  .ValuesTable th:first-child {
-    min-width: 160px;
-    white-space: normal;
   }
 }
 
