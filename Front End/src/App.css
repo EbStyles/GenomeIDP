@@ -1271,6 +1271,12 @@ h1 {
   color: rgb(17, 58, 92);
 }
 
+.ResultsContentRow {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
 .results-nav-right {
   justify-self: end;
   display: flex;
@@ -2536,18 +2542,17 @@ h1 {
 }
 
 /* Results Pages */
-/* Results Pages */
 @media (max-width: 768px) {
   .ResultsPage,
   .ResultsMain,
-  .ResultsLayout {
+  .ResultsLayout,
+  .ResultsContentRow {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column;
     width: 100%;
     max-width: 100%;
     min-width: 0;
     align-items: stretch;
-    justify-content: flex-start;
     box-sizing: border-box;
   }
 
@@ -2558,6 +2563,10 @@ h1 {
     width: 100%;
     max-width: 100%;
     min-width: 0;
+    height: auto;
+    min-height: unset;
+    overflow: visible;
+    margin: 0;
     padding: 0.75rem 1rem 1rem;
     box-sizing: border-box;
   }
@@ -2565,6 +2574,7 @@ h1 {
   .ResultsNav img {
     width: 56px;
     height: auto;
+    flex: 0 0 auto;
     margin-bottom: 0.5rem;
   }
 
@@ -2572,29 +2582,37 @@ h1 {
     width: 100%;
     max-width: 100%;
     min-width: 0;
+    margin: 0 0 0.5rem 0;
+    font-size: clamp(1.3rem, 6vw, 2rem);
+    line-height: 1.1;
     white-space: normal;
     overflow-wrap: anywhere;
     word-break: break-word;
-    font-size: clamp(1.3rem, 6vw, 2rem);
-    line-height: 1.1;
-    margin: 0 0 0.5rem 0;
   }
 
   .results-nav-right {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    padding-right: 0;
     margin-bottom: 0.75rem;
+    padding-right: 0;
+  }
+
+  .results-nav-right .save-exit-link {
+    font-size: 1rem;
+  }
+
+  .ResultsSidenav {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   .Rsidenav {
-    order: 2;
-    display: block;
-    position: static !important;
-    top: auto !important;
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 100%;
+    max-width: 100%;
     min-width: 0;
     min-height: 0;
     height: auto;
@@ -2606,20 +2624,10 @@ h1 {
     margin: 0;
     padding: 0.5rem 0;
     box-sizing: border-box;
+    position: static;
+    top: auto;
     align-self: stretch;
-  }
-
-  .ResultsCard,
-  .InfoCard,
-  .results-content {
-    order: 1;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0;
-    margin: 1rem 0 0;
-    padding: 1rem;
-    box-sizing: border-box;
-    align-self: stretch;
+    scrollbar-gutter: stable;
   }
 
   .Rsidenav .navlist,
@@ -2632,32 +2640,68 @@ h1 {
     box-sizing: border-box;
   }
 
+  .Rsidenav * {
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
   .Rsidenav .section-title,
   .Rsidenav .subsection-item,
-  .Rsidenav button,
+  .Rsidenav h1,
+  .Rsidenav h2,
+  .Rsidenav h3,
+  .Rsidenav a,
   .Rsidenav li,
-  .Rsidenav a {
+  .Rsidenav button {
     width: 100%;
     max-width: 100%;
-    box-sizing: border-box;
     white-space: normal;
     overflow-wrap: anywhere;
     word-break: break-word;
   }
 
   .Rsidenav .section-title {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1.05rem;
     line-height: 1.3;
+    text-align: left;
     padding: 0.75rem 1rem;
   }
 
   .Rsidenav .subsection-item {
     display: block;
-    text-align: left;
     font-size: 1rem;
     line-height: 1.35;
+    text-align: left;
     padding: 0.65rem 1rem 0.65rem 1.5rem;
+  }
+
+  .Rsidenav .section-icon {
+    flex: 0 0 auto;
+  }
+
+  .ResultsMain {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .ResultsCard,
+  .InfoCard,
+  .results-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 1rem;
+    clear: both;
+    box-sizing: border-box;
+    align-self: stretch;
   }
 }
 
