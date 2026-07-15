@@ -2434,23 +2434,23 @@ const Results = () => {
                 </label>
 
                 <textarea
-                    id="current-program-other"
-                    className="SMARTOtherTextarea"
-                    value={currentProgramOther}
-                    onChange={(e) => setCurrentProgramOther(e.target.value)}
-                    rows={4}
-                    placeholder="Write your other goal here..."
-                    style={{
-                        width: "100%",
-                        padding: "0.75rem",
-                        borderRadius: "8px",
-                        border: "1px solid #ccc",
-                        fontFamily: "inherit",
-                        fontSize: "1rem",
-                        lineHeight: "1.5",
-                        resize: "vertical"
-                    }}
-                />
+    				id="current-program-other"
+    				className="SMARTOtherTextarea"
+    				value={currentProgramOther}
+    				onChange={(e) => setCurrentProgramOther(e.target.value)}
+    				rows={4}
+    				placeholder="Write your other goal here..."
+    				style={{
+        				width: "100%",
+        				padding: "0.75rem",
+        				borderRadius: "8px",
+        				border: "1px solid #ccc",
+        				fontFamily: "inherit",
+        				fontSize: "1rem",
+        				lineHeight: "1.5",
+        				resize: "vertical"
+    				}}
+				/>
             </div>
         )}
 
