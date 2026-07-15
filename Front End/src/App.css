@@ -2788,7 +2788,7 @@ h1 {
 
 /* SMART Goals */
 @media (max-width: 768px) {
-  .CareerAdvancementOtherTextarea {
+  .SMARTOtherTextarea {
     max-width: 100%;
     box-sizing: border-box;
   }
