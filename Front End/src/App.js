@@ -20,6 +20,7 @@ import CareerDetails from './components/careers';
 import AdminPage from './components/admin';
 import CareerResourcesPage from './components/CareerResourcesPage';
 import Privacy from './components/Privacy';
+import TermsofUse from './components/TermsofUse';
 
 // Inner component — useHistory must be called inside the Router, not alongside it
 function AppInner() {
@@ -99,6 +100,7 @@ function AppInner() {
         <Route path="/admin"><AdminPage /></Route>
         <Route path="/resources/:careerName" component={CareerResourcesPage} />
         <Route path="/privacy"><Privacy /></Route>
+        <Route path="/terms"><TermsofUse /></Route>
       </Switch>
     </div>
   );
