@@ -535,6 +535,61 @@ h1 {
   opacity: 1;
 }
 
+/* Privacy page layout */
+.privacy-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* or center if you want vertical centering */
+  padding: 4rem 1rem;
+}
+
+/* Card for privacy content */
+.privacy-container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* Typography inside the card */
+.privacy-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.privacy-container h2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-container h3 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-container p,
+.privacy-container li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.privacy-container ul,
+.privacy-container ol {
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-container a {
+  color: #176b98; /* harmonize with your Section6 colours */
+  text-decoration: underline;
+}
+
 /* ==========================================================================
    Auth pages
    ========================================================================== */
