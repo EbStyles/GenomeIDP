@@ -143,6 +143,7 @@ const ViewReport = ({ selectedReportData, reportName, reportSections }) => {
                     <h4 style={{ marginTop: "1.25rem" }}>Values assessment summary</h4>
                     <table
                         style={{
+                            className="report-summary-table"
                             width: "100%",
                             borderCollapse: "collapse",
                             marginTop: "0.5rem",
@@ -216,6 +217,7 @@ const ViewReport = ({ selectedReportData, reportName, reportSections }) => {
                     <h4 style={{ marginTop: "1.25rem" }}>Skills assessment summary</h4>
                     <table
                         style={{
+                            className="report-summary-table"
                             width: "100%",
                             borderCollapse: "collapse",
                             marginTop: "0.5rem",
@@ -291,6 +293,7 @@ const ViewReport = ({ selectedReportData, reportName, reportSections }) => {
                     <h4 style={{ marginTop: "1.0rem" }}>Interests assessment summary</h4>
                     <table
                         style={{
+                            className="report-summary-table"
                             width: "100%",
                             borderCollapse: "collapse",
                             marginTop: "0.25rem",
@@ -963,10 +966,7 @@ const ViewReport = ({ selectedReportData, reportName, reportSections }) => {
                 </tbody>
             </table>
         </div>
-    )}
-
-            {/* Sections will be added here one by one */}
-            
+    )}      
             </div>
         
         	<div style={{ marginTop: "2rem", marginBottom: "1rem" }}>
