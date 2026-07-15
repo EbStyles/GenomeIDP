@@ -47,6 +47,7 @@ const PrepareReport = ({
                             </label>
                             <input
                                 type="text"
+                                className="PrepareReportNameInput"
                                 value={reportName}
                                 onChange={(e) => setReportName(e.target.value)}
                                 placeholder="Enter name"
