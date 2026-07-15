@@ -2794,6 +2794,14 @@ h1 {
   }
 }
 
+/* Prepare Report */
+@media (max-width: 768px) {
+  .PrepareReportNameInput {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 /* View Report */
 @media (max-width: 768px) {
   .report-export-root {
