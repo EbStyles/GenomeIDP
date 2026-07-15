@@ -41,7 +41,9 @@ const PrepareReport = ({
                     </label>
 
                     {reportSections.name && (
-                        <div style={{ marginLeft: "1.5rem", marginTop: "0.5rem" }}>
+                        <div 
+                        	className="PrepareReportNameField"
+                        	style={{ marginLeft: "1.5rem", marginTop: "0.5rem" }}>
                             <label style={{ display: "block", marginBottom: "0.35rem" }}>
                                 Name to include on the report
                             </label>
