@@ -33,13 +33,16 @@ const Section6 = forwardRef((props,ref) => {
             </a>
 
             </div>
+            
+            <div className="site-footer">
+      			<p>
+        			© {new Date().getFullYear()} GenomeIDP ·{" "}
+        			<Link to="/privacy">Privacy Policy</Link>
+      			</p>
+    		</div>
+            
 
         </div>
-
-			<div className="site-footer">
-                <p>© {new Date().getFullYear()} GenomeIDP · <Link to="/privacy">Privacy Policy</Link></p>
-            </div>
-       
         </div>
 
 
