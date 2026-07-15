@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import { Link } from "react-router-dom";
 
 const Section6 = forwardRef((props,ref) => {
     return ( 
