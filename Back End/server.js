@@ -21,6 +21,11 @@ app.use(cors({
 }))
 app.use(express.json())
 
+// Health check
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', service: 'GenomeIDP API' })
+})
+
 // Log information about the request
 app.use((req, res, next) => {
     console.log(req.path, req.method)
