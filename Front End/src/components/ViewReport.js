@@ -142,8 +142,8 @@ const ViewReport = ({ selectedReportData, reportName, reportSections }) => {
                 <>
                     <h4 style={{ marginTop: "1.25rem" }}>Values assessment summary</h4>
                     <table
+                    	className="report-summary-table"
                         style={{
-                            className="report-summary-table"
                             width: "100%",
                             borderCollapse: "collapse",
                             marginTop: "0.5rem",
@@ -216,8 +216,8 @@ const ViewReport = ({ selectedReportData, reportName, reportSections }) => {
                 <>
                     <h4 style={{ marginTop: "1.25rem" }}>Skills assessment summary</h4>
                     <table
+                    	className="report-summary-table"
                         style={{
-                            className="report-summary-table"
                             width: "100%",
                             borderCollapse: "collapse",
                             marginTop: "0.5rem",
@@ -292,11 +292,11 @@ const ViewReport = ({ selectedReportData, reportName, reportSections }) => {
                 <>
                     <h4 style={{ marginTop: "1.0rem" }}>Interests assessment summary</h4>
                     <table
+                    	className="report-summary-table"
                         style={{
-                            className="report-summary-table"
                             width: "100%",
                             borderCollapse: "collapse",
-                            marginTop: "0.25rem",
+                            marginTop: "0.5rem",
                             fontSize: isExportingPdf ? "0.8rem" : "0.95rem",
                         }}
                     >
