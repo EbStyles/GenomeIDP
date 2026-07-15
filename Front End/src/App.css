@@ -2732,14 +2732,18 @@ h1 {
     box-sizing: border-box;
   }
 
-  .CareerResourcesBlurb {
+  .blurb.CareerResourcesBlurb {
     width: 100%;
     max-width: 100%;
     min-width: 0;
     margin: 0 0 1.5rem 0;
+    padding: 0;
   }
 
-  .CareerResourcesBlurb p {
+  .blurb.CareerResourcesBlurb p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    font-weight: normal;
     text-align: left;
     line-height: 1.6;
     white-space: normal;
@@ -2747,11 +2751,17 @@ h1 {
     word-break: normal;
   }
 
-  .CareerResourcesBlurb p:first-child {
+  .blurb.CareerResourcesBlurb p:first-child {
+    font-size: 1.05rem;
+    font-weight: normal;
     text-align: left;
   }
 
-  .CareerResourcesBlurb strong {
+  .blurb.CareerResourcesBlurb p:last-child {
+    margin-bottom: 0;
+  }
+
+  .blurb.CareerResourcesBlurb strong {
     overflow-wrap: break-word;
     word-break: normal;
   }
