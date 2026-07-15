@@ -2705,6 +2705,19 @@ h1 {
   }
 }
 
+/* Career Match Pages */
+@media (max-width: 768px) {
+  .ScoreSection {
+    font-size: 1.15rem;
+    line-height: 1.25;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    margin: 1.5rem 0 0.75rem 0;
+  }
+}
+
 /* Career Resources */
 @media (max-width: 768px) {
   .CareerResourcesPage {
