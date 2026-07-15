@@ -2829,6 +2829,16 @@ h1 {
     overflow-wrap: anywhere;
     vertical-align: top;
   }
+
+  .report-section-box th:last-child,
+  .report-section-box td:last-child {
+    width: 6rem;
+    min-width: 6rem;
+  }
+
+  .report-section-box th:last-child {
+    white-space: nowrap !important;
+  }
 }
 
 /* ==========================================================================
